@@ -1,0 +1,77 @@
+{
+  "title": "Codex Ecosystem",
+  "subtitle": "Skills, plugins, connectors, memory architecture, and workspace guidelines on this machine",
+  "refresh": "Refresh",
+  "refreshing": "Refreshing...",
+  "loadFailed": "Could not read the Codex environment",
+  "generatedAt": "Collected at",
+  "tabs": {
+    "skills": "Skills",
+    "plugins": "Plugins",
+    "connectors": "Connectors",
+    "memory": "Memory Architecture",
+    "guidelines": "Workspace Guidelines"
+  },
+  "summary": {
+    "skills": "Skills",
+    "plugins": "Plugins",
+    "connectors": "Connectors",
+    "connectorCalls": "Connector calls",
+    "skillReads": "Skill reads",
+    "memoryLayers": "Memory layers"
+  },
+  "skills": {
+    "search": "Search skills...",
+    "allSources": "All sources",
+    "sourceSystem": "Built-in",
+    "sourcePlugin": "From plugin",
+    "sourceUser": "Installed",
+    "calls": "{{count}} reads",
+    "files": "{{count}} files",
+    "scripts": "{{count}} scripts",
+    "empty": "No skill matches this filter.",
+    "usageNote": "A skill counts as used when its SKILL.md is read - that read is how a skill is activated."
+  },
+  "plugins": {
+    "version": "Version",
+    "versions": "Versions",
+    "ships": "Ships",
+    "calls": "{{count}} reads",
+    "skillsLabel": "{{count}} skills",
+    "empty": "No plugin is cached.",
+    "usageNote": "Plugin calls count the reads of the SKILL.md files the plugin ships."
+  },
+  "connectors": {
+    "transport": "Transport",
+    "http": "HTTP",
+    "stdio": "Local process",
+    "url": "Endpoint",
+    "command": "Command",
+    "envKeys": "Environment variables",
+    "referencedEnvVars": "Referenced variables",
+    "useCase": "When to use it",
+    "tools": "Tools called",
+    "calls": "{{count}} calls",
+    "noCalls": "Not called yet",
+    "empty": "No connector is configured.",
+    "secretNote": "Only variable names are shown - values never leave this machine."
+  },
+  "memory": {
+    "root": "Repository",
+    "lessons": "Lessons",
+    "decisions": "Permanent decisions",
+    "files": "Files",
+    "size": "Size",
+    "layers": "Layer",
+    "purpose": "Purpose",
+    "empty": "No Codex memory repository was found.",
+    "hint": "Point DASHBOARD_CODEX_MEMORY_ROOT at a memory repository to show it here."
+  },
+  "guidelines": {
+    "scopeGlobal": "Global",
+    "scopeWorkspace": "Workspace",
+    "characters": "{{count}} characters",
+    "empty": "No guideline file was found.",
+    "hint": "AGENTS.md files are read from the Codex home directory and from the memory repository."
+  }
+}

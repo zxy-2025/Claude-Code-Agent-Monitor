@@ -56,6 +56,30 @@
  *   changing its name, shape, or timing.
  * - `CcConfigChangedPayload` (interface) — exported contract; search downstream imports and tests
  *   before changing its name, shape, or timing.
+ * - `CodexConnector` (interface) — exported contract; search downstream imports and tests before
+ *   changing its name, shape, or timing.
+ * - `CodexConnectorTool` (interface) — exported contract; search downstream imports and tests
+ *   before changing its name, shape, or timing.
+ * - `CodexEcosystemSnapshot` (interface) — exported contract; search downstream imports and tests
+ *   before changing its name, shape, or timing.
+ * - `CodexEcosystemSummary` (interface) — exported contract; search downstream imports and tests
+ *   before changing its name, shape, or timing.
+ * - `CodexGuideline` (interface) — exported contract; search downstream imports and tests before
+ *   changing its name, shape, or timing.
+ * - `CodexGuidelineBlock` (interface) — exported contract; search downstream imports and tests
+ *   before changing its name, shape, or timing.
+ * - `CodexMemoryArchitecture` (interface) — exported contract; search downstream imports and tests
+ *   before changing its name, shape, or timing.
+ * - `CodexMemoryLayer` (interface) — exported contract; search downstream imports and tests before
+ *   changing its name, shape, or timing.
+ * - `CodexPlugin` (interface) — exported contract; search downstream imports and tests before
+ *   changing its name, shape, or timing.
+ * - `CodexSkill` (interface) — exported contract; search downstream imports and tests before
+ *   changing its name, shape, or timing.
+ * - `CodexSkillFiles` (interface) — exported contract; search downstream imports and tests before
+ *   changing its name, shape, or timing.
+ * - `CodexSkillSource` (type) — exported contract; search downstream imports and tests before
+ *   changing its name, shape, or timing.
  * - `CompactionImpactData` (interface) — exported contract; search downstream imports and tests
  *   before changing its name, shape, or timing.
  * - `ConcurrencyData` (interface) — exported contract; search downstream imports and tests before
@@ -224,6 +248,30 @@
  *   selection.
  * - `CcConfigChangedPayload` (interface) — top-level declaration that helps orient code review and
  *   focused test selection.
+ * - `CodexConnector` (interface) — top-level declaration that helps orient code review and focused
+ *   test selection.
+ * - `CodexConnectorTool` (interface) — top-level declaration that helps orient code review and
+ *   focused test selection.
+ * - `CodexEcosystemSnapshot` (interface) — top-level declaration that helps orient code review and
+ *   focused test selection.
+ * - `CodexEcosystemSummary` (interface) — top-level declaration that helps orient code review and
+ *   focused test selection.
+ * - `CodexGuideline` (interface) — top-level declaration that helps orient code review and focused
+ *   test selection.
+ * - `CodexGuidelineBlock` (interface) — top-level declaration that helps orient code review and
+ *   focused test selection.
+ * - `CodexMemoryArchitecture` (interface) — top-level declaration that helps orient code review and
+ *   focused test selection.
+ * - `CodexMemoryLayer` (interface) — top-level declaration that helps orient code review and
+ *   focused test selection.
+ * - `CodexPlugin` (interface) — top-level declaration that helps orient code review and focused
+ *   test selection.
+ * - `CodexSkill` (interface) — top-level declaration that helps orient code review and focused test
+ *   selection.
+ * - `CodexSkillFiles` (interface) — top-level declaration that helps orient code review and focused
+ *   test selection.
+ * - `CodexSkillSource` (type) — top-level declaration that helps orient code review and focused
+ *   test selection.
  * - `CompactionImpactData` (interface) — top-level declaration that helps orient code review and
  *   focused test selection.
  * - `ConcurrencyData` (interface) — top-level declaration that helps orient code review and focused
@@ -3199,3 +3247,190 @@ export const SESSION_STATUS_CONFIG: Record<
     dot: "bg-slate-400",
   },
 };
+
+/** Where a Codex skill came from. */
+export type CodexSkillSource = "system" | "plugin" | "user";
+
+/** File tally for one installed skill. */
+export interface CodexSkillFiles {
+  /** Total files in the skill folder. */
+  total: number;
+  /** Executable helper scripts. */
+  scripts: number;
+  /** Markdown documentation files. */
+  references: number;
+}
+
+/** One installed Codex skill. */
+export interface CodexSkill {
+  /** Skill name from its SKILL.md frontmatter. */
+  name: string;
+  /** When to use the skill, from its SKILL.md frontmatter. */
+  description: string;
+  /** Where the skill came from. */
+  source: CodexSkillSource;
+  /** Owning plugin for plugin-provided skills. */
+  plugin: string | null;
+  /** Absolute path of the skill folder. */
+  path: string;
+  /** File tally. */
+  files: CodexSkillFiles;
+  /** How often the skill's SKILL.md was read. */
+  calls: number;
+}
+
+/** One cached Codex plugin. */
+export interface CodexPlugin {
+  /** Plugin name. */
+  name: string;
+  /** Distribution channel the plugin came from. */
+  vendor: string;
+  /** Installed versions, oldest first. */
+  versions: string[];
+  /** Newest installed version. */
+  version: string | null;
+  /** Skills the plugin ships. */
+  skills: string[];
+  /** Absolute path of the plugin folder. */
+  path: string;
+  /** How often the plugin's SKILL.md files were read. */
+  calls: number;
+}
+
+/** One tool invoked on a connector. */
+export interface CodexConnectorTool {
+  /** Tool name. */
+  tool: string;
+  /** How often it was called. */
+  calls: number;
+}
+
+/** One configured MCP connector. */
+export interface CodexConnector {
+  /** Connector name as configured. */
+  name: string;
+  /** How the dashboard reaches the connector. */
+  transport: "http" | "stdio";
+  /** HTTP endpoint for remote connectors. */
+  url: string | null;
+  /** Executable for locally spawned connectors. */
+  command: string | null;
+  /** Arguments passed to the command. */
+  args: string[];
+  /** Environment variable names the connector declares. Values are never exposed. */
+  envKeys: string[];
+  /** Environment variables the connector reads from its environment. */
+  referencedEnvVars: string[];
+  /** Human-readable use-case hints Codex stores for the connector. */
+  useCases: string[];
+  /** Tools called on this connector, most used first. */
+  tools: CodexConnectorTool[];
+  /** Total recorded calls. */
+  calls: number;
+}
+
+/** One layer of the Codex memory architecture. */
+export interface CodexMemoryLayer {
+  /** Layer key. */
+  key: string;
+  /** Short label. */
+  label: string;
+  /** Path of the layer relative to the repository root. */
+  dir: string;
+  /** What the layer is for. */
+  description: string;
+  /** Files in the layer. */
+  files: number;
+  /** Bytes in the layer. */
+  bytes: number;
+  /** Whether the layer exists on disk. */
+  exists: boolean;
+}
+
+/** The Codex memory repository's layered layout. */
+export interface CodexMemoryArchitecture {
+  /** Absolute path of the repository. */
+  root: string;
+  /** Layers from hot to cold. */
+  layers: CodexMemoryLayer[];
+  /** Totals across all layers. */
+  totals: { files: number; bytes: number };
+  /** Number of recorded lessons. */
+  lessons: number;
+  /** Number of permanent decisions. */
+  decisions: number;
+  /** Whether the repository carries its own AGENTS.md. */
+  hasAgents: boolean;
+}
+
+/** One renderable block of a guideline document. */
+export interface CodexGuidelineBlock {
+  /** Block kind. */
+  type: "heading" | "paragraph" | "list";
+  /** Heading or paragraph text. */
+  text?: string;
+  /** Heading depth, starting at 1. */
+  level?: number;
+  /** List items. */
+  items?: string[];
+}
+
+/** One guideline document. */
+export interface CodexGuideline {
+  /** Where the document applies. */
+  scope: "global" | "workspace";
+  /** Document title. */
+  title: string;
+  /** Absolute path of the file. */
+  path: string;
+  /** Document size in characters. */
+  characters: number;
+  /** Parsed blocks. */
+  blocks: CodexGuidelineBlock[];
+}
+
+/** Headline counts for the Codex environment. */
+export interface CodexEcosystemSummary {
+  /** Total installed skills. */
+  skills: number;
+  /** Skills bundled with Codex itself. */
+  skillsSystem: number;
+  /** Skills shipped by bundled plugins. */
+  skillsPlugin: number;
+  /** Skills installed by the user. */
+  skillsUser: number;
+  /** Cached plugins. */
+  plugins: number;
+  /** Configured MCP connectors. */
+  connectors: number;
+  /** Recorded MCP tool calls. */
+  connectorCalls: number;
+  /** Recorded reads of a skill's SKILL.md. */
+  skillReads: number;
+  /** Memory layers discovered. */
+  memoryLayers: number;
+  /** Guideline documents found. */
+  guidelineDocuments: number;
+}
+
+/** A snapshot of the local Codex environment. */
+export interface CodexEcosystemSnapshot {
+  /** When the snapshot was collected. */
+  generatedAt: string;
+  /** Resolved Codex home directory. */
+  codexHome: string;
+  /** Resolved Codex memory repository, when one was found. */
+  memoryRoot: string | null;
+  /** Headline counts. */
+  summary: CodexEcosystemSummary;
+  /** Installed skills. */
+  skills: CodexSkill[];
+  /** Cached plugins. */
+  plugins: CodexPlugin[];
+  /** Configured connectors. */
+  connectors: CodexConnector[];
+  /** Memory architecture. */
+  memory: CodexMemoryArchitecture | null;
+  /** Guideline documents. */
+  guidelines: CodexGuideline[];
+}

@@ -548,7 +548,7 @@ export const PAGE_ACTION_COMMANDS: {
   },
 ];
 
-/** The nine sidebar destinations. */
+/** The ten sidebar destinations. */
 export const PAGE_COMMANDS: {
   to: string;
   icon: LucideIcon;
@@ -560,6 +560,7 @@ export const PAGE_COMMANDS: {
   { to: "/activity", icon: Activity, navKey: "nav:activityFeed" },
   { to: "/analytics", icon: BarChart3, navKey: "nav:analytics" },
   { to: "/workflows", icon: Workflow, navKey: "nav:workflows" },
+  { to: "/codex", icon: Boxes, navKey: "nav:codexEcosystem" },
   { to: "/cc-config", icon: Boxes, navKey: "nav:ccConfig" },
   { to: "/run", icon: Play, navKey: "nav:run" },
   { to: "/settings", icon: SettingsIcon, navKey: "nav:settings" },

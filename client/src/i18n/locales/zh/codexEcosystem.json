@@ -1,0 +1,77 @@
+{
+  "title": "Codex 生态",
+  "subtitle": "本机的技能、插件、连接器、记忆架构与工作区准则",
+  "refresh": "刷新",
+  "refreshing": "刷新中...",
+  "loadFailed": "无法读取 Codex 环境",
+  "generatedAt": "采集时间",
+  "tabs": {
+    "skills": "技能",
+    "plugins": "插件",
+    "connectors": "连接器",
+    "memory": "记忆架构",
+    "guidelines": "工作区准则"
+  },
+  "summary": {
+    "skills": "技能",
+    "plugins": "插件",
+    "connectors": "连接器",
+    "connectorCalls": "连接器调用",
+    "skillReads": "技能读取",
+    "memoryLayers": "记忆层"
+  },
+  "skills": {
+    "search": "搜索技能...",
+    "allSources": "全部来源",
+    "sourceSystem": "内置",
+    "sourcePlugin": "来自插件",
+    "sourceUser": "用户安装",
+    "calls": "读取 {{count}} 次",
+    "files": "{{count}} 个文件",
+    "scripts": "{{count}} 个脚本",
+    "empty": "没有符合筛选条件的技能。",
+    "usageNote": "技能的“调用次数”指其 SKILL.md 被读取的次数 —— 读取正是技能被激活的方式。"
+  },
+  "plugins": {
+    "version": "版本",
+    "versions": "版本列表",
+    "ships": "自带",
+    "calls": "读取 {{count}} 次",
+    "skillsLabel": "{{count}} 个技能",
+    "empty": "没有缓存的插件。",
+    "usageNote": "插件调用次数统计其自带 SKILL.md 被读取的次数。"
+  },
+  "connectors": {
+    "transport": "传输方式",
+    "http": "HTTP",
+    "stdio": "本地进程",
+    "url": "接入地址",
+    "command": "命令",
+    "envKeys": "环境变量",
+    "referencedEnvVars": "引用的变量",
+    "useCase": "使用场景",
+    "tools": "已调用工具",
+    "calls": "调用 {{count}} 次",
+    "noCalls": "尚未调用",
+    "empty": "没有配置任何连接器。",
+    "secretNote": "只显示变量名，变量值不会离开本机。"
+  },
+  "memory": {
+    "root": "仓库位置",
+    "lessons": "教训",
+    "decisions": "永久决策",
+    "files": "文件数",
+    "size": "体积",
+    "layers": "层级",
+    "purpose": "职责",
+    "empty": "没有找到 Codex 记忆库。",
+    "hint": "把 DASHBOARD_CODEX_MEMORY_ROOT 指向记忆库即可在此显示。"
+  },
+  "guidelines": {
+    "scopeGlobal": "全局",
+    "scopeWorkspace": "工作区",
+    "characters": "{{count}} 字符",
+    "empty": "没有找到准则文件。",
+    "hint": "AGENTS.md 会从 Codex 主目录与记忆库中读取。"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "title": "Hệ sinh thái Codex",
+  "subtitle": "Kỹ năng, plugin, connector, kiến trúc bộ nhớ và quy tắc workspace trên máy này",
+  "refresh": "Làm mới",
+  "refreshing": "Đang làm mới...",
+  "loadFailed": "Không đọc được môi trường Codex",
+  "generatedAt": "Thu thập lúc",
+  "tabs": {
+    "skills": "Kỹ năng",
+    "plugins": "Plugin",
+    "connectors": "Connector",
+    "memory": "Kiến trúc bộ nhớ",
+    "guidelines": "Quy tắc workspace"
+  },
+  "summary": {
+    "skills": "Kỹ năng",
+    "plugins": "Plugin",
+    "connectors": "Connector",
+    "connectorCalls": "Lệnh gọi connector",
+    "skillReads": "Lượt đọc kỹ năng",
+    "memoryLayers": "Lớp bộ nhớ"
+  },
+  "skills": {
+    "search": "Tìm kỹ năng...",
+    "allSources": "Mọi nguồn",
+    "sourceSystem": "Tích hợp",
+    "sourcePlugin": "Từ plugin",
+    "sourceUser": "Đã cài",
+    "calls": "Đọc {{count}} lần",
+    "files": "{{count}} tệp",
+    "scripts": "{{count}} script",
+    "empty": "Không có kỹ năng nào khớp bộ lọc.",
+    "usageNote": "Một kỹ năng được tính là đã dùng khi SKILL.md của nó được đọc - chính lần đọc đó kích hoạt kỹ năng."
+  },
+  "plugins": {
+    "version": "Phiên bản",
+    "versions": "Các phiên bản",
+    "ships": "Cung cấp",
+    "calls": "Đọc {{count}} lần",
+    "skillsLabel": "{{count}} kỹ năng",
+    "empty": "Không có plugin nào trong bộ nhớ đệm.",
+    "usageNote": "Lệnh gọi plugin tính theo số lần đọc các tệp SKILL.md mà plugin cung cấp."
+  },
+  "connectors": {
+    "transport": "Giao thức",
+    "http": "HTTP",
+    "stdio": "Tiến trình cục bộ",
+    "url": "Điểm cuối",
+    "command": "Lệnh",
+    "envKeys": "Biến môi trường",
+    "referencedEnvVars": "Biến được tham chiếu",
+    "useCase": "Khi nào dùng",
+    "tools": "Công cụ đã gọi",
+    "calls": "Gọi {{count}} lần",
+    "noCalls": "Chưa gọi lần nào",
+    "empty": "Chưa cấu hình connector nào.",
+    "secretNote": "Chỉ hiển thị tên biến - giá trị không rời khỏi máy này."
+  },
+  "memory": {
+    "root": "Kho lưu trữ",
+    "lessons": "Bài học",
+    "decisions": "Quyết định lâu dài",
+    "files": "Số tệp",
+    "size": "Dung lượng",
+    "layers": "Lớp",
+    "purpose": "Vai trò",
+    "empty": "Không tìm thấy kho bộ nhớ Codex.",
+    "hint": "Trỏ DASHBOARD_CODEX_MEMORY_ROOT tới một kho bộ nhớ để hiển thị tại đây."
+  },
+  "guidelines": {
+    "scopeGlobal": "Toàn cục",
+    "scopeWorkspace": "Workspace",
+    "characters": "{{count}} ký tự",
+    "empty": "Không tìm thấy tệp quy tắc.",
+    "hint": "Các tệp AGENTS.md được đọc từ thư mục Codex và từ kho bộ nhớ."
+  }
+}

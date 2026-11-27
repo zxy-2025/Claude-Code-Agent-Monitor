@@ -1,0 +1,77 @@
+{
+  "title": "Ecosistema Codex",
+  "subtitle": "Habilidades, plugins, conectores, arquitectura de memoria y reglas del espacio de trabajo en este equipo",
+  "refresh": "Actualizar",
+  "refreshing": "Actualizando...",
+  "loadFailed": "No se pudo leer el entorno de Codex",
+  "generatedAt": "Recolectado el",
+  "tabs": {
+    "skills": "Habilidades",
+    "plugins": "Plugins",
+    "connectors": "Conectores",
+    "memory": "Arquitectura de memoria",
+    "guidelines": "Reglas del espacio de trabajo"
+  },
+  "summary": {
+    "skills": "Habilidades",
+    "plugins": "Plugins",
+    "connectors": "Conectores",
+    "connectorCalls": "Llamadas a conectores",
+    "skillReads": "Lecturas de habilidades",
+    "memoryLayers": "Capas de memoria"
+  },
+  "skills": {
+    "search": "Buscar habilidades...",
+    "allSources": "Todas las fuentes",
+    "sourceSystem": "Integradas",
+    "sourcePlugin": "De plugin",
+    "sourceUser": "Instaladas",
+    "calls": "{{count}} lecturas",
+    "files": "{{count}} archivos",
+    "scripts": "{{count}} scripts",
+    "empty": "Ninguna habilidad coincide con el filtro.",
+    "usageNote": "Una habilidad cuenta como usada cuando se lee su SKILL.md: esa lectura es lo que la activa."
+  },
+  "plugins": {
+    "version": "Versión",
+    "versions": "Versiones",
+    "ships": "Incluye",
+    "calls": "{{count}} lecturas",
+    "skillsLabel": "{{count}} habilidades",
+    "empty": "No hay plugins en caché.",
+    "usageNote": "Las llamadas a plugins cuentan las lecturas de los archivos SKILL.md que incluyen."
+  },
+  "connectors": {
+    "transport": "Transporte",
+    "http": "HTTP",
+    "stdio": "Proceso local",
+    "url": "Endpoint",
+    "command": "Comando",
+    "envKeys": "Variables de entorno",
+    "referencedEnvVars": "Variables referenciadas",
+    "useCase": "Cuándo usarlo",
+    "tools": "Herramientas llamadas",
+    "calls": "{{count}} llamadas",
+    "noCalls": "Aún sin llamadas",
+    "empty": "No hay ningún conector configurado.",
+    "secretNote": "Solo se muestran los nombres de las variables: sus valores nunca salen de este equipo."
+  },
+  "memory": {
+    "root": "Repositorio",
+    "lessons": "Lecciones",
+    "decisions": "Decisiones permanentes",
+    "files": "Archivos",
+    "size": "Tamaño",
+    "layers": "Capa",
+    "purpose": "Función",
+    "empty": "No se encontró el repositorio de memoria de Codex.",
+    "hint": "Apunta DASHBOARD_CODEX_MEMORY_ROOT a un repositorio de memoria para verlo aquí."
+  },
+  "guidelines": {
+    "scopeGlobal": "Global",
+    "scopeWorkspace": "Espacio de trabajo",
+    "characters": "{{count}} caracteres",
+    "empty": "No se encontró ningún archivo de reglas.",
+    "hint": "Los archivos AGENTS.md se leen del directorio de Codex y del repositorio de memoria."
+  }
+}

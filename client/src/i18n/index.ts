@@ -54,6 +54,8 @@
  *   exports before changing assumptions here.
  * - `./locales/en/ccConfig.json` — repository-local contract consumed by this module; review its
  *   exports before changing assumptions here.
+ * - `./locales/en/codexEcosystem.json` — repository-local contract consumed by this module; review
+ *   its exports before changing assumptions here.
  * - `./locales/en/common.json` — repository-local contract consumed by this module; review its
  *   exports before changing assumptions here.
  * - `./locales/en/dashboard.json` — repository-local contract consumed by this module; review its
@@ -84,6 +86,8 @@
  *   exports before changing assumptions here.
  * - `./locales/es/ccConfig.json` — repository-local contract consumed by this module; review its
  *   exports before changing assumptions here.
+ * - `./locales/es/codexEcosystem.json` — repository-local contract consumed by this module; review
+ *   its exports before changing assumptions here.
  * - `./locales/es/common.json` — repository-local contract consumed by this module; review its
  *   exports before changing assumptions here.
  * - `./locales/es/dashboard.json` — repository-local contract consumed by this module; review its
@@ -114,6 +118,8 @@
  *   exports before changing assumptions here.
  * - `./locales/ko/ccConfig.json` — repository-local contract consumed by this module; review its
  *   exports before changing assumptions here.
+ * - `./locales/ko/codexEcosystem.json` — repository-local contract consumed by this module; review
+ *   its exports before changing assumptions here.
  * - `./locales/ko/common.json` — repository-local contract consumed by this module; review its
  *   exports before changing assumptions here.
  * - `./locales/ko/dashboard.json` — repository-local contract consumed by this module; review its
@@ -144,6 +150,8 @@
  *   exports before changing assumptions here.
  * - `./locales/vi/ccConfig.json` — repository-local contract consumed by this module; review its
  *   exports before changing assumptions here.
+ * - `./locales/vi/codexEcosystem.json` — repository-local contract consumed by this module; review
+ *   its exports before changing assumptions here.
  * - `./locales/vi/common.json` — repository-local contract consumed by this module; review its
  *   exports before changing assumptions here.
  * - `./locales/vi/dashboard.json` — repository-local contract consumed by this module; review its
@@ -174,6 +182,8 @@
  *   exports before changing assumptions here.
  * - `./locales/zh/ccConfig.json` — repository-local contract consumed by this module; review its
  *   exports before changing assumptions here.
+ * - `./locales/zh/codexEcosystem.json` — repository-local contract consumed by this module; review
+ *   its exports before changing assumptions here.
  * - `./locales/zh/common.json` — repository-local contract consumed by this module; review its
  *   exports before changing assumptions here.
  * - `./locales/zh/dashboard.json` — repository-local contract consumed by this module; review its
@@ -418,6 +428,7 @@ i18n
         run: run_en,
         alerts: alerts_en,
         splash: splash_en,
+        codexEcosystem: codexEcosystem_en,
       },
       zh: {
         common: common_zh,
@@ -435,6 +446,7 @@ i18n
         run: run_zh,
         alerts: alerts_zh,
         splash: splash_zh,
+        codexEcosystem: codexEcosystem_zh,
       },
       vi: {
         common: common_vi,
@@ -452,6 +464,7 @@ i18n
         run: run_vi,
         alerts: alerts_vi,
         splash: splash_vi,
+        codexEcosystem: codexEcosystem_vi,
       },
       ko: {
         common: common_ko,
@@ -469,6 +482,7 @@ i18n
         run: run_ko,
         alerts: alerts_ko,
         splash: splash_ko,
+        codexEcosystem: codexEcosystem_ko,
       },
       es: {
         common: common_es,
@@ -486,6 +500,7 @@ i18n
         run: run_es,
         alerts: alerts_es,
         splash: splash_es,
+        codexEcosystem: codexEcosystem_es,
       },
     },
     supportedLngs: ["en", "zh", "vi", "ko", "es"],
@@ -507,6 +522,7 @@ i18n
       "run",
       "alerts",
       "splash",
+      "codexEcosystem",
     ],
     defaultNS: "common",
     interpolation: { escapeValue: false },
@@ -519,3 +535,8 @@ i18n
 
 /** Configured i18next instance — import side effects run {@link init}. */
 export default i18n;
+import codexEcosystem_en from "./locales/en/codexEcosystem.json";
+import codexEcosystem_zh from "./locales/zh/codexEcosystem.json";
+import codexEcosystem_vi from "./locales/vi/codexEcosystem.json";
+import codexEcosystem_ko from "./locales/ko/codexEcosystem.json";
+import codexEcosystem_es from "./locales/es/codexEcosystem.json";

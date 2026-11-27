@@ -791,6 +791,7 @@ import type {
   AlertEvent,
   AlertRule,
   Analytics,
+  CodexEcosystemSnapshot,
   CostResult,
   CursorModelPricing,
   DashboardEvent,
@@ -1362,6 +1363,27 @@ export const api = {
       applyScope(qs);
       return request<Analytics>(`/analytics?${qs.toString()}`);
     },
+  },
+
+  // ─────────────────────────── Codex Ecosystem API ───────────────────────────
+  /** Local Codex environment: skills, plugins, connectors, memory, guidelines. */
+  codexEcosystem: {
+    /**
+     * GET /api/codex/ecosystem - inspect the local Codex environment.
+     *
+     * The server collects this from the Codex home directory, the plugin cache,
+     * `config.toml`, and the memory repository. Connector environment *values*
+     * are never included.
+     *
+     * @returns {@link CodexEcosystemSnapshot} - the collected snapshot.
+     */
+    get: () => request<CodexEcosystemSnapshot>("/codex/ecosystem"),
+    /**
+     * GET /api/codex/ecosystem?refresh=1 - rebuild instead of using the cache.
+     *
+     * @returns {@link CodexEcosystemSnapshot} - a freshly collected snapshot.
+     */
+    refresh: () => request<CodexEcosystemSnapshot>("/codex/ecosystem?refresh=1"),
   },
 
   // ─────────────────────────────── Settings API ───────────────────────────────

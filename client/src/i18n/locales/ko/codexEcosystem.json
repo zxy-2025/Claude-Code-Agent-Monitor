@@ -1,0 +1,77 @@
+{
+  "title": "Codex 생태계",
+  "subtitle": "이 컴퓨터의 스킬, 플러그인, 커넥터, 메모리 아키텍처와 작업 공간 규칙",
+  "refresh": "새로 고침",
+  "refreshing": "새로 고치는 중...",
+  "loadFailed": "Codex 환경을 읽을 수 없습니다",
+  "generatedAt": "수집 시각",
+  "tabs": {
+    "skills": "스킬",
+    "plugins": "플러그인",
+    "connectors": "커넥터",
+    "memory": "메모리 아키텍처",
+    "guidelines": "작업 공간 규칙"
+  },
+  "summary": {
+    "skills": "스킬",
+    "plugins": "플러그인",
+    "connectors": "커넥터",
+    "connectorCalls": "커넥터 호출",
+    "skillReads": "스킬 읽기",
+    "memoryLayers": "메모리 계층"
+  },
+  "skills": {
+    "search": "스킬 검색...",
+    "allSources": "모든 출처",
+    "sourceSystem": "기본 제공",
+    "sourcePlugin": "플러그인 제공",
+    "sourceUser": "설치됨",
+    "calls": "{{count}}회 읽음",
+    "files": "파일 {{count}}개",
+    "scripts": "스크립트 {{count}}개",
+    "empty": "조건에 맞는 스킬이 없습니다.",
+    "usageNote": "스킬 사용 횟수는 SKILL.md를 읽은 횟수입니다. 읽기가 곧 스킬 활성화입니다."
+  },
+  "plugins": {
+    "version": "버전",
+    "versions": "버전 목록",
+    "ships": "제공",
+    "calls": "{{count}}회 읽음",
+    "skillsLabel": "스킬 {{count}}개",
+    "empty": "캐시된 플러그인이 없습니다.",
+    "usageNote": "플러그인 호출은 제공된 SKILL.md 파일을 읽은 횟수입니다."
+  },
+  "connectors": {
+    "transport": "전송 방식",
+    "http": "HTTP",
+    "stdio": "로컬 프로세스",
+    "url": "엔드포인트",
+    "command": "명령",
+    "envKeys": "환경 변수",
+    "referencedEnvVars": "참조 변수",
+    "useCase": "사용 시점",
+    "tools": "호출된 도구",
+    "calls": "{{count}}회 호출",
+    "noCalls": "아직 호출 없음",
+    "empty": "설정된 커넥터가 없습니다.",
+    "secretNote": "변수 이름만 표시하며 값은 이 컴퓨터를 벗어나지 않습니다."
+  },
+  "memory": {
+    "root": "저장소",
+    "lessons": "교훈",
+    "decisions": "영구 결정",
+    "files": "파일 수",
+    "size": "크기",
+    "layers": "계층",
+    "purpose": "역할",
+    "empty": "Codex 메모리 저장소를 찾지 못했습니다.",
+    "hint": "DASHBOARD_CODEX_MEMORY_ROOT를 메모리 저장소로 지정하면 여기에 표시됩니다."
+  },
+  "guidelines": {
+    "scopeGlobal": "전역",
+    "scopeWorkspace": "작업 공간",
+    "characters": "{{count}}자",
+    "empty": "규칙 파일을 찾지 못했습니다.",
+    "hint": "AGENTS.md는 Codex 홈 디렉터리와 메모리 저장소에서 읽습니다."
+  }
+}

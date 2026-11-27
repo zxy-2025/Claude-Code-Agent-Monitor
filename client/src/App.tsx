@@ -71,6 +71,8 @@
  *   before changing assumptions here.
  * - `./pages/CcConfig` — repository-local contract consumed by this module; review its exports
  *   before changing assumptions here.
+ * - `./pages/CodexEcosystem` — repository-local contract consumed by this module; review its
+ *   exports before changing assumptions here.
  * - `./pages/Dashboard` — repository-local contract consumed by this module; review its exports
  *   before changing assumptions here.
  * - `./pages/KanbanBoard` — repository-local contract consumed by this module; review its exports
@@ -236,6 +238,7 @@ import { SessionDetail } from "./pages/SessionDetail";
 import { ActivityFeed } from "./pages/ActivityFeed";
 import { Analytics } from "./pages/Analytics";
 import { Workflows } from "./pages/Workflows";
+import { CodexEcosystem } from "./pages/CodexEcosystem";
 import { Settings } from "./pages/Settings";
 import { CcConfig } from "./pages/CcConfig";
 import { Run } from "./pages/Run";
@@ -291,6 +294,7 @@ export default function App() {
           <Route path="activity" element={<ActivityFeed />} />
           <Route path="analytics" element={<Analytics />} />
           <Route path="workflows" element={<Workflows />} />
+          <Route path="codex" element={<CodexEcosystem />} />
           <Route path="cc-config" element={<CcConfig />} />
           <Route path="run" element={<Run />} />
           <Route path="settings" element={<Settings />} />

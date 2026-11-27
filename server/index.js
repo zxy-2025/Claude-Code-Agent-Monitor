@@ -54,6 +54,7 @@ const alertsRouter = require("./routes/alerts");
 const webhooksRouter = require("./routes/webhooks");
 const remoteSourcesRouter = require("./routes/remote-sources");
 const metricsRouter = require("./routes/metrics");
+const codexEcosystemRouter = require("./routes/codex-ecosystem");
 
 const APP_VERSION = (() => {
   try {
@@ -98,6 +99,7 @@ function createApp() {
   app.use("/api/updates", updatesRouter);
   app.use("/api/cc-config", ccConfigRouter);
   app.use("/api/codex-config", codexConfigRouter);
+  app.use("/api/codex", codexEcosystemRouter);
   app.use("/api/run", runRouter);
   app.use("/api/alerts", alertsRouter);
   app.use("/api/webhooks", webhooksRouter);
