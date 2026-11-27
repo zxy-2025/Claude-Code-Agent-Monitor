@@ -29,6 +29,8 @@
  *   server truth.
  *
  * ## Local dependency edges
+ * - `../hooks/useTheme` — repository-local contract consumed by this module; review its exports
+ *   before changing assumptions here.
  * - `../lib/api` — repository-local contract consumed by this module; review its exports before
  *   changing assumptions here.
  * - `../lib/appEvents` — repository-local contract consumed by this module; review its exports
@@ -128,6 +130,8 @@
  * - `useRef` — lifecycle/state dependency detected in this module; preserve dependency freshness
  *   and cleanup semantics.
  * - `useState` — lifecycle/state dependency detected in this module; preserve dependency freshness
+ *   and cleanup semantics.
+ * - `useTheme` — lifecycle/state dependency detected in this module; preserve dependency freshness
  *   and cleanup semantics.
  * - `useTranslation` — lifecycle/state dependency detected in this module; preserve dependency
  *   freshness and cleanup semantics.
@@ -272,6 +276,8 @@ import {
   Check,
   ChevronUp,
   ChevronDown,
+  Sun,
+  Moon,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { api } from "../lib/api";
@@ -279,6 +285,7 @@ import { eventBus } from "../lib/eventBus";
 import type { UpdateStatusPayload, WSMessage } from "../lib/types";
 import { Select } from "./Select";
 import { UPDATE_CHECK_EVENT } from "../lib/appEvents";
+import { useTheme } from "../hooks/useTheme";
 
 /**
  * Type guard for an `update_status` WebSocket payload.
@@ -824,6 +831,7 @@ export function Sidebar({ wsConnected, collapsed, onToggle }: SidebarProps) {
         : updateStatus
           ? t("nav:upToDate")
           : t("nav:checkForUpdates");
+  const { isLight, toggle: toggleTheme } = useTheme();
   const currentLanguage = normalizeLanguage(i18n.resolvedLanguage ?? i18n.language);
   const languageOptions = SUPPORTED_LANGUAGES.map((language) => ({
     value: language,
@@ -940,6 +948,32 @@ export function Sidebar({ wsConnected, collapsed, onToggle }: SidebarProps) {
             </div>
           </div>
         )}
+      </div>
+
+      {/* Theme toggle */}
+      <div className="px-2 pb-2 flex-shrink-0">
+        <button
+          type="button"
+          onClick={toggleTheme}
+          aria-label={isLight ? t("nav:switchToDark") : t("nav:switchToLight")}
+          title={isLight ? t("nav:switchToDark") : t("nav:switchToLight")}
+          className={`w-full h-10 rounded-lg border border-border bg-surface-2 transition-colors ${
+            collapsed
+              ? "flex items-center justify-center text-gray-400 hover:text-gray-200 hover:bg-surface-3"
+              : "flex items-center gap-2.5 px-3 text-gray-300 hover:text-gray-100 hover:bg-surface-3"
+          }`}
+        >
+          {isLight ? (
+            <Moon className="w-4 h-4 flex-shrink-0" />
+          ) : (
+            <Sun className="w-4 h-4 flex-shrink-0" />
+          )}
+          {!collapsed && (
+            <span className="text-[11px] font-semibold uppercase tracking-wide">
+              {isLight ? t("nav:themeDark") : t("nav:themeLight")}
+            </span>
+          )}
+        </button>
       </div>
 
       {/* Collapse toggle */}
@@ -1514,7 +1548,7 @@ function Sparkline({
   });
   const linePath = points.length > 0 ? `M ${points.join(" L ")}` : "";
   const areaPath = points.length > 0 ? `M 0,${H} L ${points.join(" L ")} L ${W},${H} Z` : "";
-  const stroke = connected ? "#34d399" : "#6b7280";
+  const stroke = connected ? "rgb(var(--c-ch-t-emerald-2))" : "rgb(var(--c-ch-muted))";
 
   return (
     <div className="rounded-lg border border-border bg-surface-2 p-2.5">

@@ -49,6 +49,10 @@
  *   changing assumptions here.
  * - `./index.css` — repository-local contract consumed by this module; review its exports before
  *   changing assumptions here.
+ * - `./lib/theme` — repository-local contract consumed by this module; review its exports before
+ *   changing assumptions here.
+ * - `./theme.css` — repository-local contract consumed by this module; review its exports before
+ *   changing assumptions here.
  *
  * ## Package dependency edges
  * - `@fontsource/inter/latin-400.css` — external package boundary; keep usage within the installed
@@ -171,7 +175,9 @@ import "@fontsource/inter/latin-700.css";
 import "@fontsource/jetbrains-mono/latin-400.css";
 import "@fontsource/jetbrains-mono/latin-500.css";
 import App from "./App";
+import { initTheme } from "./lib/theme";
 import "./i18n";
+import "./theme.css";
 import "./index.css";
 
 if ("serviceWorker" in navigator) {
@@ -197,6 +203,9 @@ if ("serviceWorker" in navigator) {
     })
     .catch(() => {});
 }
+
+/** Apply the stored theme before the first paint so the dashboard never flashes the wrong palette. */
+initTheme();
 
 /** Mount point for the React app in `index.html`. */
 const root = document.getElementById("root");
