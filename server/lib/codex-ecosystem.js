@@ -308,8 +308,17 @@ function collectMemoryArchitecture(root) {
   let decisions = 0;
   try {
     const text = fs.readFileSync(memoryFile, "utf8");
-    const numbered = text.match(/^\s*[-*]\s*\*\*(\d+)\*\*/gm) || [];
-    lessons = numbered.length;
+    // The file footer records the authoritative running total, e.g. "教训 1-115";
+    // fall back to counting the numbered bullets when that footer is absent.
+    const totals = text.match(/教训\s*\d+\s*[–-]\s*(\d+)/g);
+    if (totals && totals.length) {
+      // The footer is the authoritative running total; earlier mentions (e.g. the
+      // "1-102" header line) only describe a prefix, so keep the last number.
+      lessons = Number.parseInt(totals[totals.length - 1].match(/(\d+)\s*$/)[1], 10);
+    } else {
+      const numbered = text.match(/^\s*[-*]\s*\*\*(\d+)\*\*/gm) || [];
+      lessons = numbered.length;
+    }
     decisions = (text.match(/^\|\s*20\d\d-\d\d-\d\d\s*\|/gm) || []).length;
   } catch {
     /* memory file missing - counts stay zero */
