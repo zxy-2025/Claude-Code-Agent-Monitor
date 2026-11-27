@@ -307,8 +307,8 @@ export function CopyButton({ text }: { text: string }) {
  */
 export function Terminal({ command, description }: { command: string; description?: string }) {
   return (
-    <div className="relative bg-black/70 border border-border rounded font-mono text-[11px] overflow-hidden">
-      <div className="flex items-center justify-between px-3 py-1 border-b border-border bg-black/40">
+    <div className="relative bg-code-panel border border-border rounded font-mono text-[11px] overflow-hidden">
+      <div className="flex items-center justify-between px-3 py-1 border-b border-border bg-code-header">
         <span className="text-gray-500 text-[10px] uppercase tracking-wide">terminal</span>
         <CopyButton text={command} />
       </div>
@@ -386,8 +386,8 @@ function OutputBlock({
 }) {
   const color = variant === "err" ? "text-red-300" : "text-gray-200";
   return (
-    <div className="relative bg-black/70 border border-border rounded font-mono text-[11px] overflow-hidden">
-      <div className="flex items-center justify-between px-3 py-1 border-b border-border bg-black/40">
+    <div className="relative bg-code-panel border border-border rounded font-mono text-[11px] overflow-hidden">
+      <div className="flex items-center justify-between px-3 py-1 border-b border-border bg-code-header">
         <span className="text-gray-500 text-[10px] uppercase tracking-wide">{label}</span>
         <CopyButton text={text} />
       </div>
@@ -425,9 +425,9 @@ export function LineNumberedCode({
 }) {
   const lines = text.split(/\r?\n/);
   return (
-    <div className="relative bg-black/70 border border-border rounded font-mono text-[11px] overflow-hidden">
+    <div className="relative bg-code-panel border border-border rounded font-mono text-[11px] overflow-hidden">
       {label && (
-        <div className="flex items-center justify-between px-3 py-1 border-b border-border bg-black/40">
+        <div className="flex items-center justify-between px-3 py-1 border-b border-border bg-code-header">
           <span className="text-gray-500 text-[10px] uppercase tracking-wide">{label}</span>
           <CopyButton text={text} />
         </div>
@@ -437,7 +437,7 @@ export function LineNumberedCode({
           <tbody>
             {lines.map((line, i) => (
               <tr key={i}>
-                <td className="px-2 text-right text-gray-600 select-none bg-black/40 border-r border-border align-top">
+                <td className="px-2 text-right text-gray-600 select-none bg-code-row border-r border-border align-top">
                   {i + startLine}
                 </td>
                 <td className="px-3 text-gray-200 whitespace-pre-wrap break-words">{line}</td>
@@ -478,7 +478,7 @@ export function UnifiedDiff({ hunks }: { hunks: DiffHunk[] }) {
     return <p className="text-[11px] text-gray-500 italic">no diff</p>;
   }
   return (
-    <div className="relative bg-black/70 border border-border rounded font-mono text-[11px] overflow-hidden">
+    <div className="relative bg-code-panel border border-border rounded font-mono text-[11px] overflow-hidden">
       <div className="overflow-auto max-h-96">
         {hunks.map((hunk, i) => (
           <HunkView key={i} hunk={hunk} />

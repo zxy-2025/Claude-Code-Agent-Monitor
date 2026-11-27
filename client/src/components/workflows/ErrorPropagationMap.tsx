@@ -179,7 +179,12 @@ import { useTranslation } from "react-i18next";
 import type { ErrorPropagationData } from "../../lib/types";
 
 /** Bar colors by error depth, from the main agent (red) to deeply nested subagents (purple). */
-const DEPTH_COLORS = ["#ef4444", "#f97316", "#eab308", "#a855f7"];
+const DEPTH_COLORS = [
+  "rgb(var(--c-ch-c-red))",
+  "rgb(var(--c-ch-c-orange))",
+  "rgb(var(--c-ch-c-yellow))",
+  "rgb(var(--c-ch-c-purple))",
+];
 
 // ── Component ─────────────────────────────────────────────────────────────────
 
@@ -223,7 +228,7 @@ export function ErrorPropagationMap({ data }: ErrorPropagationMapProps) {
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#10b981"
+            stroke="rgb(var(--c-ch-c-emerald))"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -305,7 +310,7 @@ export function ErrorPropagationMap({ data }: ErrorPropagationMapProps) {
                     </div>
                     <span
                       className="text-xs font-semibold tabular-nums w-7 text-right transition-colors"
-                      style={{ color: isHovered ? color : "#9ca3af" }}
+                      style={{ color: isHovered ? color : "rgb(var(--c-ch-text-3b))" }}
                     >
                       {d.count}
                     </span>
@@ -371,7 +376,7 @@ export function ErrorPropagationMap({ data }: ErrorPropagationMapProps) {
                   height="14"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#f59e0b"
+                  stroke="rgb(var(--c-ch-t-amber-2))"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"

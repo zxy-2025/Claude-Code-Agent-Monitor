@@ -260,28 +260,28 @@ function fmtTokens(n: number): string {
  */
 const FAMILY_COLORS = {
   opus: {
-    grad: ["#7c3aed", "#a855f7"] as [string, string],
-    stroke: "#a855f7",
-    text: "#e9d5ff",
-    badge: "rgba(168,85,247,0.15)",
+    grad: ["rgb(var(--c-ch-c-violet-2))", "rgb(var(--c-ch-c-purple))"] as [string, string],
+    stroke: "rgb(var(--c-ch-c-purple))",
+    text: "rgb(var(--c-ch-t-fuchsia))",
+    badge: "rgb(var(--c-ch-c-purple)/0.15)",
   },
   sonnet: {
-    grad: ["#1d4ed8", "#3b82f6"] as [string, string],
-    stroke: "#3b82f6",
-    text: "#bfdbfe",
-    badge: "rgba(59,130,246,0.15)",
+    grad: ["rgb(var(--c-ch-grad-blue-2))", "rgb(var(--c-ch-c-blue))"] as [string, string],
+    stroke: "rgb(var(--c-ch-c-blue))",
+    text: "rgb(var(--c-ch-t-blue))",
+    badge: "rgb(var(--c-ch-c-blue)/0.15)",
   },
   haiku: {
-    grad: ["#065f46", "#10b981"] as [string, string],
-    stroke: "#10b981",
-    text: "#a7f3d0",
-    badge: "rgba(16,185,129,0.15)",
+    grad: ["rgb(var(--c-ch-grad-emerald))", "rgb(var(--c-ch-c-emerald))"] as [string, string],
+    stroke: "rgb(var(--c-ch-c-emerald))",
+    text: "rgb(var(--c-ch-t-emerald))",
+    badge: "rgb(var(--c-ch-c-emerald)/0.15)",
   },
   other: {
-    grad: ["#374151", "#6b7280"] as [string, string],
-    stroke: "#6b7280",
-    text: "#d1d5db",
-    badge: "rgba(107,114,128,0.15)",
+    grad: ["rgb(var(--c-ch-text-4))", "rgb(var(--c-ch-muted))"] as [string, string],
+    stroke: "rgb(var(--c-ch-muted))",
+    text: "rgb(var(--c-ch-text-2b))",
+    badge: "rgb(var(--c-ch-muted)/0.15)",
   },
 } as const;
 
@@ -393,7 +393,7 @@ function renderFlow(
     .attr("x", PADDING.left + NODE_W / 2)
     .attr("y", labelY)
     .attr("text-anchor", "middle")
-    .attr("fill", "#6b7280")
+    .attr("fill", "rgb(var(--c-ch-muted))")
     .attr("font-size", 11)
     .attr("font-family", "Inter, sans-serif")
     .attr("letter-spacing", "0.08em")
@@ -403,7 +403,7 @@ function renderFlow(
     .attr("x", PADDING.left + NODE_W + COL_GAP + NODE_W / 2)
     .attr("y", labelY)
     .attr("text-anchor", "middle")
-    .attr("fill", "#6b7280")
+    .attr("fill", "rgb(var(--c-ch-muted))")
     .attr("font-size", 11)
     .attr("font-family", "Inter, sans-serif")
     .attr("letter-spacing", "0.08em")
@@ -427,7 +427,7 @@ function renderFlow(
     g.append("path")
       .attr("d", `M${x1},${y1} C${cx},${y1} ${cx},${y2} ${x2},${y2}`)
       .attr("fill", "none")
-      .attr("stroke", "#2a2a3d")
+      .attr("stroke", "rgb(var(--c-ch-line))")
       .attr("stroke-width", 1.5)
       .attr("opacity", 0.7);
   });
@@ -499,7 +499,7 @@ function renderFlow(
       ng.append("text")
         .attr("x", 12)
         .attr("y", 66)
-        .attr("fill", "#6b7280")
+        .attr("fill", "rgb(var(--c-ch-muted))")
         .attr("font-size", 9.5)
         .attr("font-family", "Inter, sans-serif")
         .text(t("modelDelegation.tokensCount", { tokens: fmtTokens(node.totalTokens) }));
@@ -511,7 +511,7 @@ function renderFlow(
         .attr("x", NODE_W - 10)
         .attr("y", 66)
         .attr("text-anchor", "end")
-        .attr("fill", "#6b7280")
+        .attr("fill", "rgb(var(--c-ch-muted))")
         .attr("font-size", 9.5)
         .attr("font-family", "Inter, sans-serif")
         .text(t("modelDelegation.sessionsCount", { count: node.sessionCount }));
@@ -656,9 +656,9 @@ export function ModelDelegationFlow({ data }: ModelDelegationFlowProps) {
           opacity: 0,
           left: 0,
           top: 0,
-          background: "#12121f",
-          border: "1px solid #2a2a4a",
-          color: "#e2e8f0",
+          background: "rgb(var(--c-ch-canvas))",
+          border: "1px solid rgb(var(--c-ch-grid))",
+          color: "rgb(var(--c-ch-text))",
           minWidth: 240,
           maxWidth: 320,
           transition: "opacity 120ms ease-out",
@@ -730,13 +730,13 @@ function buildModelDelegationTooltip(
       : t("modelDelegation.tooltip.subagentModel");
 
   const title = document.createElement("p");
-  title.style.cssText = "font-size:12px;font-weight:600;color:#e2e8f0;margin:0";
+  title.style.cssText = "font-size:12px;font-weight:600;color:rgb(var(--c-ch-text));margin:0";
   title.textContent = node.label;
   el.appendChild(title);
 
   const subtitle = document.createElement("p");
   subtitle.style.cssText =
-    "font-size:10px;color:#64748b;margin:2px 0 8px;text-transform:uppercase;letter-spacing:0.05em";
+    "font-size:10px;color:rgb(var(--c-ch-axis));margin:2px 0 8px;text-transform:uppercase;letter-spacing:0.05em";
   subtitle.textContent = `${sideLabel} · ${node.family}`;
   el.appendChild(subtitle);
 
@@ -746,10 +746,11 @@ function buildModelDelegationTooltip(
     row.style.cssText =
       "display:flex;justify-content:space-between;gap:16px;font-size:11px;line-height:1.6";
     const lbl = document.createElement("span");
-    lbl.style.color = "#64748b";
+    lbl.style.color = "rgb(var(--c-ch-axis))";
     lbl.textContent = label;
     const val = document.createElement("span");
-    val.style.cssText = "color:#cbd5e1;font-weight:500;font-variant-numeric:tabular-nums";
+    val.style.cssText =
+      "color:rgb(var(--c-ch-text-2));font-weight:500;font-variant-numeric:tabular-nums";
     val.textContent = value;
     row.appendChild(lbl);
     row.appendChild(val);
@@ -765,12 +766,12 @@ function buildModelDelegationTooltip(
 
   const desc = document.createElement("p");
   desc.style.cssText =
-    "font-size:11px;color:#94a3b8;line-height:1.45;border-top:1px solid #2a2a4a;padding-top:8px;margin:8px 0 0";
+    "font-size:11px;color:rgb(var(--c-ch-text-3));line-height:1.45;border-top:1px solid rgb(var(--c-ch-grid));padding-top:8px;margin:8px 0 0";
   desc.textContent = describeFamily(node.family, t);
   el.appendChild(desc);
 
   const hint = document.createElement("p");
-  hint.style.cssText = "font-size:11px;color:#64748b;line-height:1.45;margin:6px 0 0";
+  hint.style.cssText = "font-size:11px;color:rgb(var(--c-ch-axis));line-height:1.45;margin:6px 0 0";
   hint.textContent =
     node.side === "main"
       ? t("modelDelegation.tooltip.lines.main")

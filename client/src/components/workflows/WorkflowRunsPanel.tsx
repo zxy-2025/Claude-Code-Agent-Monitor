@@ -833,7 +833,7 @@ export function WorkflowRunsPanel({
                                   <div className="text-[10px] uppercase tracking-wider text-gray-600 mb-0.5">
                                     {t("runs.promptLabel")}
                                   </div>
-                                  <pre className="text-[11px] text-gray-400 whitespace-pre-wrap break-words bg-black/30 rounded p-2 max-h-48 overflow-auto">
+                                  <pre className="text-[11px] text-gray-400 whitespace-pre-wrap break-words bg-code-inline rounded p-2 max-h-48 overflow-auto">
                                     {fullPrompt}
                                   </pre>
                                 </div>
@@ -842,7 +842,7 @@ export function WorkflowRunsPanel({
                                 <div className="text-[10px] uppercase tracking-wider text-gray-600 mb-0.5">
                                   {t("runs.resultLabel")}
                                 </div>
-                                <pre className="text-[11px] text-gray-300 whitespace-pre-wrap break-words bg-black/30 rounded p-2 max-h-96 overflow-auto">
+                                <pre className="text-[11px] text-gray-300 whitespace-pre-wrap break-words bg-code-inline rounded p-2 max-h-96 overflow-auto">
                                   {fullResult}
                                 </pre>
                               </div>

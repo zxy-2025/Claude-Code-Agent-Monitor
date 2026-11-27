@@ -291,13 +291,13 @@ export function CatAvatar({ mood, reducedMotion, hovered = false, size = 60 }: C
       <defs>
         {/* Soft top-lit gradient for the body/head - gives a rounded, plush feel. */}
         <radialGradient id="tabbyFur" cx="50%" cy="34%" r="72%">
-          <stop offset="0%" stopColor="#5b5b86" />
-          <stop offset="60%" stopColor="#43436a" />
-          <stop offset="100%" stopColor="#343352" />
+          <stop offset="0%" stopColor="rgb(var(--c-ch-cat-1))" />
+          <stop offset="60%" stopColor="rgb(var(--c-ch-cat-2))" />
+          <stop offset="100%" stopColor="rgb(var(--c-ch-cat-3))" />
         </radialGradient>
         <linearGradient id="tabbyHalo" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#a5b4fc" />
-          <stop offset="100%" stopColor="#6366f1" />
+          <stop offset="0%" stopColor="rgb(var(--c-ch-t-indigo))" />
+          <stop offset="100%" stopColor="rgb(var(--c-ch-c-indigo))" />
         </linearGradient>
       </defs>
 

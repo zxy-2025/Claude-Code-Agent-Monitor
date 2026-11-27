@@ -249,7 +249,7 @@ function PricingReviewLinks({
 }) {
   const { t } = useTranslation("dashboard");
   const linkClass = tooltip
-    ? "font-medium text-amber-100 underline decoration-amber-300/60 underline-offset-2 hover:text-white"
+    ? "font-medium text-amber-100 underline decoration-amber-300/60 underline-offset-2 hover:text-fg-strong"
     : "underline";
   if (targets.length <= 1) {
     return (

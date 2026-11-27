@@ -248,30 +248,30 @@ interface PipelineLink extends d3.SimulationLinkDatum<PipelineNode> {
 
 /** Node fill colors, cycled by node index. */
 const PALETTE = [
-  "#6366f1",
-  "#3b82f6",
-  "#22c55e",
-  "#a855f7",
-  "#f59e0b",
-  "#ec4899",
-  "#06b6d4",
-  "#f97316",
-  "#ef4444",
-  "#14b8a6",
+  "rgb(var(--c-ch-c-indigo))",
+  "rgb(var(--c-ch-c-blue))",
+  "rgb(var(--c-ch-c-green))",
+  "rgb(var(--c-ch-c-purple))",
+  "rgb(var(--c-ch-t-amber-2))",
+  "rgb(var(--c-ch-c-pink))",
+  "rgb(var(--c-ch-c-cyan))",
+  "rgb(var(--c-ch-c-orange))",
+  "rgb(var(--c-ch-c-red))",
+  "rgb(var(--c-ch-c-teal))",
 ];
 
 /** Node outline colors, the lighter partner of each {@link PALETTE} entry. */
 const STROKE_PALETTE = [
-  "#818cf8",
-  "#60a5fa",
-  "#4ade80",
-  "#c084fc",
-  "#fbbf24",
-  "#f472b6",
-  "#22d3ee",
-  "#fb923c",
-  "#f87171",
-  "#2dd4bf",
+  "rgb(var(--c-ch-c-indigo-2))",
+  "rgb(var(--c-ch-t-blue-3))",
+  "rgb(var(--c-ch-ok-text))",
+  "rgb(var(--c-ch-c-purple-2))",
+  "rgb(var(--c-ch-t-amber))",
+  "rgb(var(--c-ch-c-pink-2))",
+  "rgb(var(--c-ch-t-cyan))",
+  "rgb(var(--c-ch-c-orange-2))",
+  "rgb(var(--c-ch-err-text))",
+  "rgb(var(--c-ch-c-teal-2))",
 ];
 
 /** Radius of the least-spawned node. */
@@ -292,10 +292,10 @@ function appendTooltipRow(parent: HTMLElement, label: string, value: string) {
   const row = document.createElement("div");
   row.style.cssText = "display:flex;justify-content:space-between;gap:16px;font-size:11px";
   const lbl = document.createElement("span");
-  lbl.style.color = "#64748b";
+  lbl.style.color = "rgb(var(--c-ch-axis))";
   lbl.textContent = label;
   const val = document.createElement("span");
-  val.style.cssText = "color:#cbd5e1;font-weight:500";
+  val.style.cssText = "color:rgb(var(--c-ch-text-2));font-weight:500";
   val.textContent = value;
   row.appendChild(lbl);
   row.appendChild(val);
@@ -311,7 +311,7 @@ function appendTooltipRow(parent: HTMLElement, label: string, value: string) {
 function appendTooltipDescription(parent: HTMLElement, text: string) {
   const p = document.createElement("p");
   p.style.cssText =
-    "font-size:11px;color:#94a3b8;line-height:1.45;margin:8px 0 0;padding-top:8px;border-top:1px solid #2a2a4a";
+    "font-size:11px;color:rgb(var(--c-ch-text-3));line-height:1.45;margin:8px 0 0;padding-top:8px;border-top:1px solid rgb(var(--c-ch-grid))";
   p.textContent = text;
   parent.appendChild(p);
 }
@@ -366,13 +366,13 @@ function showTooltip(
   el.textContent = "";
 
   const title = document.createElement("p");
-  title.style.cssText = "font-size:12px;font-weight:600;color:#e2e8f0;margin:0 0 2px";
+  title.style.cssText = "font-size:12px;font-weight:600;color:rgb(var(--c-ch-text));margin:0 0 2px";
   title.textContent = d.id;
   el.appendChild(title);
 
   const subtitle = document.createElement("p");
   subtitle.style.cssText =
-    "font-size:10px;color:#64748b;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.05em";
+    "font-size:10px;color:rgb(var(--c-ch-axis));margin:0 0 8px;text-transform:uppercase;letter-spacing:0.05em";
   subtitle.textContent = t("pipeline.tooltip.agentType");
   el.appendChild(subtitle);
 
@@ -510,7 +510,7 @@ export function AgentCollaborationNetwork({
       .attr("orient", "auto")
       .append("path")
       .attr("d", "M0,0 L10,3 L0,6 Z")
-      .attr("fill", "#64748b");
+      .attr("fill", "rgb(var(--c-ch-axis))");
 
     // Clone data
     const simNodes = nodes.map((n) => ({ ...n }));
@@ -543,7 +543,7 @@ export function AgentCollaborationNetwork({
       .data(simLinks)
       .join("path")
       .attr("fill", "none")
-      .attr("stroke", "#64748b")
+      .attr("stroke", "rgb(var(--c-ch-axis))")
       .attr("stroke-opacity", 0.55)
       .attr("stroke-width", (d) => Math.max(1.5, strokeScale(d.weight)))
       .attr("marker-end", "url(#arrowhead)");
@@ -555,7 +555,7 @@ export function AgentCollaborationNetwork({
       .data(simLinks)
       .join("text")
       .attr("text-anchor", "middle")
-      .attr("fill", "#94a3b8")
+      .attr("fill", "rgb(var(--c-ch-text-3))")
       .attr("font-size", "9px")
       .attr("font-weight", "600")
       .attr("font-family", "Inter, sans-serif")
@@ -573,16 +573,16 @@ export function AgentCollaborationNetwork({
     nodeEls
       .append("circle")
       .attr("r", (d) => rScale(d.total))
-      .attr("fill", (d) => PALETTE[d.colorIndex] ?? "#6366f1")
+      .attr("fill", (d) => PALETTE[d.colorIndex] ?? "rgb(var(--c-ch-c-indigo))")
       .attr("fill-opacity", 0.8)
-      .attr("stroke", (d) => STROKE_PALETTE[d.colorIndex] ?? "#818cf8")
+      .attr("stroke", (d) => STROKE_PALETTE[d.colorIndex] ?? "rgb(var(--c-ch-c-indigo-2))")
       .attr("stroke-width", 2);
 
     nodeEls
       .append("text")
       .attr("text-anchor", "middle")
       .attr("dy", (d) => rScale(d.total) + 14)
-      .attr("fill", "#cbd5e1")
+      .attr("fill", "rgb(var(--c-ch-text-2))")
       .attr("font-size", "10px")
       .attr("font-weight", "500")
       .attr("font-family", "Inter, sans-serif")
@@ -621,13 +621,14 @@ export function AgentCollaborationNetwork({
         if (tipEl) {
           tipEl.textContent = "";
           const title = document.createElement("p");
-          title.style.cssText = "font-size:12px;font-weight:600;color:#e2e8f0;margin:0 0 2px";
+          title.style.cssText =
+            "font-size:12px;font-weight:600;color:rgb(var(--c-ch-text));margin:0 0 2px";
           title.textContent = `${src.id} \u2192 ${tgt.id}`;
           tipEl.appendChild(title);
 
           const subtitle = document.createElement("p");
           subtitle.style.cssText =
-            "font-size:10px;color:#64748b;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.05em";
+            "font-size:10px;color:rgb(var(--c-ch-axis));margin:0 0 8px;text-transform:uppercase;letter-spacing:0.05em";
           subtitle.textContent = t("pipeline.tooltip.edge");
           tipEl.appendChild(subtitle);
 
@@ -816,7 +817,7 @@ export function AgentCollaborationNetwork({
         ref={tooltipRef}
         role="tooltip"
         aria-hidden="true"
-        className="fixed z-50 px-3 py-2 bg-[#12121f] border border-[#2a2a4a] rounded-lg shadow-2xl pointer-events-none"
+        className="fixed z-50 px-3 py-2 bg-ch-canvas border border-ch-border rounded-lg shadow-2xl pointer-events-none"
         style={{
           opacity: 0,
           left: 0,
@@ -832,8 +833,8 @@ export function AgentCollaborationNetwork({
           </span>
           <div className="ml-auto flex items-center gap-1.5">
             <svg width="20" height="8" className="flex-shrink-0">
-              <line x1="0" y1="4" x2="14" y2="4" stroke="#64748b" strokeWidth="1.5" />
-              <polygon points="14,1 20,4 14,7" fill="#64748b" />
+              <line x1="0" y1="4" x2="14" y2="4" stroke="rgb(var(--c-ch-axis))" strokeWidth="1.5" />
+              <polygon points="14,1 20,4 14,7" fill="rgb(var(--c-ch-axis))" />
             </svg>
             <span className="text-[11px] text-gray-500">{t("pipeline.legendDesc")}</span>
           </div>

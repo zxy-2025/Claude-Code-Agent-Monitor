@@ -285,7 +285,7 @@ function ChartTooltip({ x, y, children }: { x: number; y: number; children: Reac
   const nearRight = x > window.innerWidth - 200;
   return (
     <div
-      className="fixed z-50 px-2 py-1.5 text-xs bg-[#12121f] border border-[#2a2a4a] rounded shadow-xl text-gray-200 pointer-events-none whitespace-nowrap"
+      className="fixed z-50 px-2 py-1.5 text-xs bg-ch-canvas border border-ch-border rounded shadow-xl text-gray-200 pointer-events-none whitespace-nowrap"
       style={{
         left: nearRight ? x - 14 : x + 14,
         top: y - 10,
@@ -340,7 +340,7 @@ function useTooltip() {
  * @returns A CSS color.
  */
 function cellColor(count: number, max: number) {
-  if (count === 0) return "#161625";
+  if (count === 0) return "rgb(var(--c-ch-empty))";
   // Log scale + RGB interpolation across a wide color ramp for maximum perceptual range
   const t = Math.log(count + 1) / Math.log(Math.max(max, 1) + 1);
   // Ramp: near-black indigo → deep indigo → bright indigo → lavender
@@ -485,7 +485,7 @@ function Heatmap({ weeks }: { weeks: Array<Array<{ date: string; count: number }
                   height: 13,
                   borderRadius: 2,
                   backgroundColor: cellColor(cell.count, maxCount),
-                  border: "1px solid rgba(255,255,255,0.04)",
+                  border: "1px solid rgb(var(--c-b-tint)/0.04)",
                   flexShrink: 0,
                   cursor: "default",
                 }}
@@ -507,7 +507,7 @@ function Heatmap({ weeks }: { weeks: Array<Array<{ date: string; count: number }
                 height: 13,
                 borderRadius: 2,
                 backgroundColor: cellColor(v, maxCount),
-                border: "1px solid rgba(255,255,255,0.06)",
+                border: "1px solid rgb(var(--c-b-tint)/0.06)",
               }}
             />
           );
@@ -523,7 +523,7 @@ function Heatmap({ weeks }: { weeks: Array<Array<{ date: string; count: number }
 /** Small area sparkline of daily counts. */
 function Sparkline({
   data,
-  color = "#6366f1",
+  color = "rgb(var(--c-ch-c-indigo))",
 }: {
   /** Daily counts, oldest first. */
   data: Array<{ date: string; count: number }>;
@@ -565,7 +565,7 @@ function Sparkline({
 /** Line chart of daily cost, with a hover tooltip per day. */
 function CostTrendLine({
   data,
-  color = "#10b981",
+  color = "rgb(var(--c-ch-c-emerald))",
 }: {
   /** Daily cost in USD, oldest first. */
   data: Array<{ date: string; cost: number }>;
@@ -755,7 +755,14 @@ function DonutChart({
     <div className="flex items-center justify-center gap-6 w-full">
       {node}
       <svg width={128} height={128} viewBox="0 0 128 128" className="flex-shrink-0">
-        <circle cx={cx} cy={cy} r={r} fill="none" stroke="#1e1e2e" strokeWidth={stroke} />
+        <circle
+          cx={cx}
+          cy={cy}
+          r={r}
+          fill="none"
+          stroke="rgb(var(--c-ch-panel))"
+          strokeWidth={stroke}
+        />
         {segments.map(({ label, value, color }, i) => {
           const dash = (value / total) * circumference;
           const gap = circumference - dash;
@@ -1129,17 +1136,25 @@ export function Analytics() {
     (data?.tokens.total_cache_read ?? 0) +
     (data?.tokens.total_cache_write ?? 0);
   const tokenMixSegments = [
-    { label: t("common:token.input"), value: data?.tokens.total_input ?? 0, color: "#60a5fa" },
-    { label: t("common:token.output"), value: data?.tokens.total_output ?? 0, color: "#34d399" },
+    {
+      label: t("common:token.input"),
+      value: data?.tokens.total_input ?? 0,
+      color: "rgb(var(--c-ch-t-blue-3))",
+    },
+    {
+      label: t("common:token.output"),
+      value: data?.tokens.total_output ?? 0,
+      color: "rgb(var(--c-ch-t-emerald-2))",
+    },
     {
       label: t("common:token.cacheRead"),
       value: data?.tokens.total_cache_read ?? 0,
-      color: "#a78bfa",
+      color: "rgb(var(--c-ch-t-violet-2))",
     },
     {
       label: t("common:token.cacheWrite"),
       value: data?.tokens.total_cache_write ?? 0,
-      color: "#facc15",
+      color: "rgb(var(--c-ch-warn-text))",
     },
   ].filter((s) => s.value > 0);
 
@@ -1154,22 +1169,22 @@ export function Analytics() {
     {
       label: t("common:status.completed"),
       value: data?.sessions_by_status?.completed ?? 0,
-      color: "#8b5cf6",
+      color: "rgb(var(--c-ch-c-violet))",
     },
     {
       label: t("common:status.active"),
       value: data?.sessions_by_status?.active ?? 0,
-      color: "#10b981",
+      color: "rgb(var(--c-ch-c-emerald))",
     },
     {
       label: t("common:status.error"),
       value: data?.sessions_by_status?.error ?? 0,
-      color: "#ef4444",
+      color: "rgb(var(--c-ch-c-red))",
     },
     {
       label: t("common:status.abandoned"),
       value: data?.sessions_by_status?.abandoned ?? 0,
-      color: "#f59e0b",
+      color: "rgb(var(--c-ch-t-amber-2))",
     },
   ].filter((s) => s.value > 0);
 
@@ -1177,22 +1192,22 @@ export function Analytics() {
     {
       label: t("common:status.completed"),
       value: data?.agents_by_status?.completed ?? 0,
-      color: "#8b5cf6",
+      color: "rgb(var(--c-ch-c-violet))",
     },
     {
       label: t("common:status.working"),
       value: data?.agents_by_status?.working ?? 0,
-      color: "#10b981",
+      color: "rgb(var(--c-ch-c-emerald))",
     },
     {
       label: t("common:status.waiting"),
       value: data?.agents_by_status?.waiting ?? 0,
-      color: "#eab308",
+      color: "rgb(var(--c-ch-c-yellow))",
     },
     {
       label: t("common:status.error"),
       value: data?.agents_by_status?.error ?? 0,
-      color: "#ef4444",
+      color: "rgb(var(--c-ch-c-red))",
     },
   ].filter((s) => s.value > 0);
 
@@ -1534,9 +1549,14 @@ export function Analytics() {
                           label: formatModelName(b.model) ?? b.model,
                           value: Math.round(b.cost * 100),
                           color:
-                            ["#8b5cf6", "#3b82f6", "#10b981", "#f59e0b", "#ef4444", "#ec4899"][
-                              i % 6
-                            ] ?? "#6b7280",
+                            [
+                              "rgb(var(--c-ch-c-violet))",
+                              "rgb(var(--c-ch-c-blue))",
+                              "rgb(var(--c-ch-c-emerald))",
+                              "rgb(var(--c-ch-t-amber-2))",
+                              "rgb(var(--c-ch-c-red))",
+                              "rgb(var(--c-ch-c-pink))",
+                            ][i % 6] ?? "rgb(var(--c-ch-muted))",
                         }))}
                         formatTotal={(cents) => fmtCost(cents / 100)}
                       />
@@ -1738,7 +1758,10 @@ export function Analytics() {
                     <p className="text-sm text-gray-500">{t("noSessionTrendData")}</p>
                   ) : (
                     <>
-                      <Sparkline data={dailySessionsLocal.slice(-30)} color="#6366f1" />
+                      <Sparkline
+                        data={dailySessionsLocal.slice(-30)}
+                        color="rgb(var(--c-ch-c-indigo))"
+                      />
                       <div className="mt-4 space-y-2">
                         {dailySessionsLocal
                           .slice(-7)

@@ -290,7 +290,7 @@ exports[`screen snapshots > Activity feed 1`] = `
                 A typical tool call emits two events sharing the same tool_use_id:
               </p>
               <code
-                class="block bg-black/40 border border-border rounded p-2 text-[11px] font-mono text-gray-300 whitespace-pre-wrap"
+                class="block bg-code-inline border border-border rounded p-2 text-[11px] font-mono text-gray-300 whitespace-pre-wrap"
               >
                 PreToolUse (Working) → PostToolUse (Waiting) → ... → Stop (Completed)
               </code>
@@ -1308,51 +1308,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -1360,51 +1334,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -1412,51 +1360,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -1464,51 +1386,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -1516,51 +1412,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -1568,51 +1438,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -1620,51 +1464,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -1672,51 +1490,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -1724,51 +1516,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -1776,51 +1542,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -1828,51 +1568,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -1880,51 +1594,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -1932,51 +1620,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -1984,51 +1646,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -2036,51 +1672,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -2088,51 +1698,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -2140,51 +1724,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -2192,51 +1750,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -2244,51 +1776,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -2296,51 +1802,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -2348,51 +1828,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -2400,51 +1854,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -2452,51 +1880,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -2504,51 +1906,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -2556,51 +1932,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -2608,51 +1958,25 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                </div>
-                <div
-                  class="flex flex-col"
-                  style="gap: 3px;"
-                >
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
-                  />
-                  <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
                 <div
@@ -2660,16 +1984,692 @@ exports[`screen snapshots > Analytics 1`] = `
                   style="gap: 3px;"
                 >
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                   <div
-                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.04); flex-shrink: 0; cursor: default;"
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                  style="gap: 3px;"
+                >
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
+                  />
+                  <div
+                    style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.04); flex-shrink: 0; cursor: default;"
                   />
                 </div>
               </div>
@@ -2680,19 +2680,19 @@ exports[`screen snapshots > Analytics 1`] = `
                   Less
                 </span>
                 <div
-                  style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.06);"
+                  style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.06);"
                 />
                 <div
-                  style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(22, 22, 37); border: 1px solid rgba(255, 255, 255, 0.06);"
+                  style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(var(--c-ch-empty)); border: 1px solid rgb(var(--c-b-tint)/0.06);"
                 />
                 <div
-                  style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(199, 210, 254); border: 1px solid rgba(255, 255, 255, 0.06);"
+                  style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(199, 210, 254); border: 1px solid rgb(var(--c-b-tint)/0.06);"
                 />
                 <div
-                  style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(199, 210, 254); border: 1px solid rgba(255, 255, 255, 0.06);"
+                  style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(199, 210, 254); border: 1px solid rgb(var(--c-b-tint)/0.06);"
                 />
                 <div
-                  style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(199, 210, 254); border: 1px solid rgba(255, 255, 255, 0.06);"
+                  style="width: 13px; height: 13px; border-radius: 2px; background-color: rgb(199, 210, 254); border: 1px solid rgb(var(--c-b-tint)/0.06);"
                 />
                 <span>
                   More
@@ -2720,123 +2720,123 @@ exports[`screen snapshots > Analytics 1`] = `
         >
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
           <div
             class="flex-1 rounded-sm transition-all cursor-default"
-            style="height: 4%; background-color: rgb(99, 102, 241); opacity: 0.15;"
+            style="height: 4%; background-color: rgb(var(--c-ch-c-indigo)); opacity: 0.15;"
           />
         </div>
         <div
@@ -8025,7 +8025,7 @@ exports[`screen snapshots > Settings 1`] = `
         >
           <button
             aria-checked="true"
-            class="rounded-lg border p-3 text-left transition-colors border-accent bg-accent/10 shadow-[0_0_0_1px_rgba(129,140,248,0.14)]"
+            class="rounded-lg border p-3 text-left transition-colors border-accent bg-accent/10 shadow-[0_0_0_1px_rgb(var(--c-ch-c-indigo-2)/0.14)]"
             role="radio"
             type="button"
           >
@@ -13146,7 +13146,7 @@ exports[`screen snapshots > Workflows 1`] = `
             >
               <span
                 class="inline-block w-2.5 h-2.5 rounded-sm flex-shrink-0"
-                style="background: rgb(59, 130, 246); opacity: 0.9;"
+                style="background: rgb(var(--c-ch-c-blue)); opacity: 0.9;"
               />
               <span
                 class="text-xs text-gray-400"
@@ -13159,7 +13159,7 @@ exports[`screen snapshots > Workflows 1`] = `
             >
               <span
                 class="inline-block w-2.5 h-2.5 rounded-sm flex-shrink-0"
-                style="background: rgb(34, 197, 94); opacity: 0.9;"
+                style="background: rgb(var(--c-ch-c-green)); opacity: 0.9;"
               />
               <span
                 class="text-xs text-gray-400"
@@ -13172,7 +13172,7 @@ exports[`screen snapshots > Workflows 1`] = `
             >
               <span
                 class="inline-block w-2.5 h-2.5 rounded-sm flex-shrink-0"
-                style="background: rgb(234, 179, 8); opacity: 0.9;"
+                style="background: rgb(var(--c-ch-c-yellow)); opacity: 0.9;"
               />
               <span
                 class="text-xs text-gray-400"
@@ -13185,7 +13185,7 @@ exports[`screen snapshots > Workflows 1`] = `
             >
               <span
                 class="inline-block w-2.5 h-2.5 rounded-sm flex-shrink-0"
-                style="background: rgb(239, 68, 68); opacity: 0.9;"
+                style="background: rgb(var(--c-ch-c-red)); opacity: 0.9;"
               />
               <span
                 class="text-xs text-gray-400"
@@ -13198,7 +13198,7 @@ exports[`screen snapshots > Workflows 1`] = `
             >
               <span
                 class="inline-block w-2.5 h-2.5 rounded-sm flex-shrink-0"
-                style="background: rgb(168, 85, 247); opacity: 0.9;"
+                style="background: rgb(var(--c-ch-c-purple)); opacity: 0.9;"
               />
               <span
                 class="text-xs text-gray-400"
@@ -13211,7 +13211,7 @@ exports[`screen snapshots > Workflows 1`] = `
             >
               <span
                 class="inline-block w-2.5 h-2.5 rounded-sm flex-shrink-0"
-                style="background: rgb(236, 72, 153); opacity: 0.9;"
+                style="background: rgb(var(--c-ch-c-pink)); opacity: 0.9;"
               />
               <span
                 class="text-xs text-gray-400"
@@ -13224,7 +13224,7 @@ exports[`screen snapshots > Workflows 1`] = `
             >
               <span
                 class="inline-block w-2.5 h-2.5 rounded-sm flex-shrink-0"
-                style="background: rgb(99, 102, 241); opacity: 0.9;"
+                style="background: rgb(var(--c-ch-c-indigo)); opacity: 0.9;"
               />
               <span
                 class="text-xs text-gray-400"
@@ -13237,7 +13237,7 @@ exports[`screen snapshots > Workflows 1`] = `
             >
               <span
                 class="inline-block w-2.5 h-2.5 rounded-sm flex-shrink-0"
-                style="background: rgb(100, 116, 139); opacity: 0.9;"
+                style="background: rgb(var(--c-ch-axis)); opacity: 0.9;"
               />
               <span
                 class="text-xs text-gray-400"
@@ -13250,7 +13250,7 @@ exports[`screen snapshots > Workflows 1`] = `
             aria-hidden="true"
             class="fixed z-50 px-3 py-2 rounded-lg shadow-2xl pointer-events-none"
             role="tooltip"
-            style="display: none; opacity: 0; left: 0px; top: 0px; background: rgb(18, 18, 31); border: 1px solid rgb(42, 42, 74); color: rgb(226, 232, 240); min-width: 240px; max-width: 320px; transition: opacity 120ms ease-out;"
+            style="display: none; opacity: 0; left: 0px; top: 0px; background: rgb(var(--c-ch-canvas)); border: 1px solid rgb(var(--c-ch-grid)); color: rgb(var(--c-ch-text)); min-width: 240px; max-width: 320px; transition: opacity 120ms ease-out;"
           />
         </div>
       </div>
@@ -13673,7 +13673,7 @@ exports[`screen snapshots > Workflows 1`] = `
               <svg
                 fill="none"
                 height="24"
-                stroke="#10b981"
+                stroke="rgb(var(--c-ch-c-emerald))"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"

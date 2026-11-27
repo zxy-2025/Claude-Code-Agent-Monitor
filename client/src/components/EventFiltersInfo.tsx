@@ -220,7 +220,7 @@ export function EventFiltersInfo() {
 
         <Section title={t("eventFilters.help.lifecycleTitle")}>
           <p className="text-[11px] text-gray-400 mb-2">{t("eventFilters.help.lifecycleDesc")}</p>
-          <code className="block bg-black/40 border border-border rounded p-2 text-[11px] font-mono text-gray-300 whitespace-pre-wrap">
+          <code className="block bg-code-inline border border-border rounded p-2 text-[11px] font-mono text-gray-300 whitespace-pre-wrap">
             {t("eventFilters.help.lifecycleFlow")}
           </code>
         </Section>

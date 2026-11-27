@@ -381,7 +381,7 @@ function PatternItem({ pattern, rank, isSelected, onClick }: PatternItemProps) {
         "rounded-lg border transition-colors duration-150 overflow-hidden",
         isSelected
           ? "bg-indigo-500/10 border-indigo-500/30"
-          : "bg-surface-2 border-transparent hover:bg-white/5 hover:border-white/10",
+          : "bg-surface-2 border-transparent hover:bg-tint/5 hover:border-tint/10",
       ].join(" ")}
     >
       <button

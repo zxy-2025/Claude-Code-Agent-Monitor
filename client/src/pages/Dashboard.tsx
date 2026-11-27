@@ -613,16 +613,23 @@ function SystemHealthTab() {
                 viewBox="0 0 96 96"
                 className="flex-shrink-0 cursor-default"
               >
-                <circle cx="48" cy="48" r="38" fill="none" stroke="#1e1e2e" strokeWidth="14" />
+                <circle
+                  cx="48"
+                  cy="48"
+                  r="38"
+                  fill="none"
+                  stroke="rgb(var(--c-ch-panel))"
+                  strokeWidth="14"
+                />
                 {(() => {
                   const r = 38,
                     cx = 48,
                     cy = 48,
                     circumference = 2 * Math.PI * r;
                   const segments = [
-                    { pct: sessPct, color: "#60a5fa" },
-                    { pct: agentPct, color: "#8b5cf6" },
-                    { pct: eventPct, color: "#34d399" },
+                    { pct: sessPct, color: "rgb(var(--c-ch-t-blue-3))" },
+                    { pct: agentPct, color: "rgb(var(--c-ch-c-violet))" },
+                    { pct: eventPct, color: "rgb(var(--c-ch-t-emerald-2))" },
                   ];
                   let offset = circumference / 4;
                   return segments.map((seg, i) => {
@@ -675,19 +682,19 @@ function SystemHealthTab() {
                 {
                   label: "Sessions",
                   value: info.db.counts?.sessions ?? 0,
-                  color: "#60a5fa",
+                  color: "rgb(var(--c-ch-t-blue-3))",
                   pct: sessPct,
                 },
                 {
                   label: "Agents",
                   value: info.db.counts?.agents ?? 0,
-                  color: "#8b5cf6",
+                  color: "rgb(var(--c-ch-c-violet))",
                   pct: agentPct,
                 },
                 {
                   label: "Events",
                   value: info.db.counts?.events ?? 0,
-                  color: "#34d399",
+                  color: "rgb(var(--c-ch-t-emerald-2))",
                   pct: eventPct,
                 },
               ].map((item) => (
@@ -734,13 +741,26 @@ function SystemHealthTab() {
               raw={`Score: ${healthScore.toFixed(1)} / 100\n\n• Success Rate (40%): ${successRate.toFixed(1)}%\n• Cache Hit (25%): ${cacheHitRate.toFixed(1)}%\n• Error Avoidance (25%): ${(100 - errorRate).toFixed(1)}%\n• Memory Health (10%): ${(100 - heapUsedPct).toFixed(1)}%`}
             >
               <svg width="120" height="120" viewBox="0 0 120 120" className="cursor-default">
-                <circle cx="60" cy="60" r="48" fill="none" stroke="#1e1e2e" strokeWidth="10" />
                 <circle
                   cx="60"
                   cy="60"
                   r="48"
                   fill="none"
-                  stroke={healthScore >= 90 ? "#34d399" : healthScore >= 70 ? "#fbbf24" : "#f87171"}
+                  stroke="rgb(var(--c-ch-panel))"
+                  strokeWidth="10"
+                />
+                <circle
+                  cx="60"
+                  cy="60"
+                  r="48"
+                  fill="none"
+                  stroke={
+                    healthScore >= 90
+                      ? "rgb(var(--c-ch-t-emerald-2))"
+                      : healthScore >= 70
+                        ? "rgb(var(--c-ch-t-amber))"
+                        : "rgb(var(--c-ch-err-text))"
+                  }
                   strokeWidth="10"
                   strokeLinecap="round"
                   strokeDasharray={`${healthScore * 3.016} ${301.6 - healthScore * 3.016}`}
@@ -905,12 +925,12 @@ function SystemHealthTab() {
                   maxLaneCount > 0 ? Math.max(4, Math.round((lane.count / maxLaneCount) * 100)) : 4;
                 const color =
                   lane.count > 5
-                    ? "#f87171"
+                    ? "rgb(var(--c-ch-err-text))"
                     : lane.count > 2
-                      ? "#fbbf24"
+                      ? "rgb(var(--c-ch-t-amber))"
                       : lane.count > 0
-                        ? "#34d399"
-                        : "#1e1e2e";
+                        ? "rgb(var(--c-ch-t-emerald-2))"
+                        : "rgb(var(--c-ch-panel))";
                 return (
                   <div
                     key={i}

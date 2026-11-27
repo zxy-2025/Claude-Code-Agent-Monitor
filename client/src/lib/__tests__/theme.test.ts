@@ -149,7 +149,7 @@ describe("theme", () => {
   });
 
   it("ignores a corrupt stored value and falls back to the default", () => {
-    localStorage.setItem(THEME_STORAGE_KEY, "sepia");
+    localStorage.setItem(THEME_STORAGE_KEY, "not-a-theme");
     expect(readStoredTheme()).toBe("light");
   });
 

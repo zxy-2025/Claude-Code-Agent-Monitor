@@ -106,6 +106,8 @@
  * - `textColorForKind` (function) — top-level declaration that helps orient code review and focused
  *   test selection.
  * - `TFn` (type) — top-level declaration that helps orient code review and focused test selection.
+ * - `withAlpha` (function) — top-level declaration that helps orient code review and focused test
+ *   selection.
  *
  * ## React and framework hooks
  * - `useCallback` — lifecycle/state dependency detected in this module; preserve dependency
@@ -354,10 +356,33 @@ const BADGE_H = 14;
  * Fill, stroke, and text colors for outcome nodes by agent status; unknown statuses fall back to a
  * neutral palette in {@link outcomeColorSet}.
  */
+/**
+ * Add an alpha channel to a token color so gradients and badges can fade out.
+ *
+ * @param color - Color built from a theme token, for example `rgb(var(--c-ch-ok-stroke))`.
+ * @param alpha - Opacity to apply, between 0 and 1.
+ * @returns The same color with the given alpha.
+ */
+function withAlpha(color: string, alpha: number): string {
+  return color.replace(/\)$/, `/${alpha})`);
+}
+
 const OUTCOME_COLORS: Record<string, { fill: string; stroke: string; text: string }> = {
-  completed: { fill: "#052e16", stroke: "#16a34a", text: "#4ade80" },
-  error: { fill: "#1f0808", stroke: "#dc2626", text: "#f87171" },
-  abandoned: { fill: "#1c1a04", stroke: "#ca8a04", text: "#facc15" },
+  completed: {
+    fill: "rgb(var(--c-ch-ok-bg))",
+    stroke: "rgb(var(--c-ch-ok-stroke))",
+    text: "rgb(var(--c-ch-ok-text))",
+  },
+  error: {
+    fill: "rgb(var(--c-ch-err-bg))",
+    stroke: "rgb(var(--c-ch-err-stroke))",
+    text: "rgb(var(--c-ch-err-text))",
+  },
+  abandoned: {
+    fill: "rgb(var(--c-ch-warn-bg))",
+    stroke: "rgb(var(--c-ch-warn-stroke))",
+    text: "rgb(var(--c-ch-warn-text))",
+  },
 };
 
 /**
@@ -371,36 +396,36 @@ const KIND_GRADIENTS: Record<
   session: {
     id: "grad-session",
     stops: [
-      { offset: "0%", color: "#312e81" },
-      { offset: "100%", color: "#4338ca" },
+      { offset: "0%", color: "rgb(var(--c-ch-grad-indigo))" },
+      { offset: "100%", color: "rgb(var(--c-ch-grad-indigo-2))" },
     ],
   },
   main: {
     id: "grad-main",
     stops: [
-      { offset: "0%", color: "#1e3a5f" },
-      { offset: "100%", color: "#1d4ed8" },
+      { offset: "0%", color: "rgb(var(--c-ch-grad-blue))" },
+      { offset: "100%", color: "rgb(var(--c-ch-grad-blue-2))" },
     ],
   },
   subagent: {
     id: "grad-subagent",
     stops: [
-      { offset: "0%", color: "#052e16" },
-      { offset: "100%", color: "#166534" },
+      { offset: "0%", color: "rgb(var(--c-ch-ok-bg))" },
+      { offset: "100%", color: "rgb(var(--c-ch-grad-green))" },
     ],
   },
   nested: {
     id: "grad-nested",
     stops: [
-      { offset: "0%", color: "#134e4a" },
+      { offset: "0%", color: "rgb(var(--c-ch-grad-teal))" },
       { offset: "100%", color: "#0f766e" },
     ],
   },
   outcome: {
     id: "grad-outcome",
     stops: [
-      { offset: "0%", color: "#1e1b4b" },
-      { offset: "100%", color: "#4338ca" },
+      { offset: "0%", color: "rgb(var(--c-ch-grad-violet))" },
+      { offset: "100%", color: "rgb(var(--c-ch-grad-indigo-2))" },
     ],
   },
 };
@@ -441,7 +466,13 @@ function successRate(completed: number, total: number): string {
  * @returns The status palette, or a neutral palette for unknown statuses.
  */
 function outcomeColorSet(status: string) {
-  return OUTCOME_COLORS[status] ?? { fill: "#1a1a28", stroke: "#363650", text: "#9ca3af" };
+  return (
+    OUTCOME_COLORS[status] ?? {
+      fill: "rgb(var(--c-ch-node))",
+      stroke: "rgb(var(--c-ch-border))",
+      text: "rgb(var(--c-ch-text-3b))",
+    }
+  );
 }
 
 // ── Layout builder ────────────────────────────────────────────────────────────
@@ -846,10 +877,7 @@ export function OrchestrationDAG({ data, onNodeClick, selectedNode }: Orchestrat
         .attr("x2", "100%")
         .attr("y2", "0%");
       grad.append("stop").attr("offset", "0%").attr("stop-color", colors.fill);
-      grad
-        .append("stop")
-        .attr("offset", "100%")
-        .attr("stop-color", colors.stroke + "55");
+      grad.append("stop").attr("offset", "100%").attr("stop-color", withAlpha(colors.stroke, 0.33));
     }
 
     // Glow filter for selected node
@@ -892,7 +920,7 @@ export function OrchestrationDAG({ data, onNodeClick, selectedNode }: Orchestrat
       .attr("x", (_, i) => layerXPositions[i] ?? 0)
       .attr("y", 22)
       .attr("text-anchor", "middle")
-      .attr("fill", "#6b7280")
+      .attr("fill", "rgb(var(--c-ch-muted))")
       .attr("font-size", "10px")
       .attr("font-weight", "500")
       .attr("letter-spacing", "0.08em")
@@ -910,7 +938,7 @@ export function OrchestrationDAG({ data, onNodeClick, selectedNode }: Orchestrat
         .attr("y1", 32)
         .attr("x2", sepX)
         .attr("y2", svgHeight - PADDING_BOTTOM + 8)
-        .attr("stroke", "#1f1f30")
+        .attr("stroke", "rgb(var(--c-ch-node-stroke))")
         .attr("stroke-width", 1)
         .attr("stroke-dasharray", "4 4");
     }
@@ -946,7 +974,7 @@ export function OrchestrationDAG({ data, onNodeClick, selectedNode }: Orchestrat
         .append("path")
         .attr("d", path)
         .attr("fill", "none")
-        .attr("stroke", "#6366f1")
+        .attr("stroke", "rgb(var(--c-ch-c-indigo))")
         .attr("stroke-width", stroke + 2)
         .attr("stroke-opacity", isZero ? 0 : 0.08)
         .attr("filter", "url(#edge-glow)");
@@ -956,7 +984,7 @@ export function OrchestrationDAG({ data, onNodeClick, selectedNode }: Orchestrat
         .append("path")
         .attr("d", path)
         .attr("fill", "none")
-        .attr("stroke", isZero ? "#2a2a3d" : "#4f46e5")
+        .attr("stroke", isZero ? "rgb(var(--c-ch-line))" : "rgb(var(--c-ch-grad-indigo-3))")
         .attr("stroke-width", isZero ? 1 : stroke)
         .attr("stroke-opacity", isZero ? 0.3 : 0.55)
         .attr("stroke-linecap", "round");
@@ -1003,7 +1031,7 @@ export function OrchestrationDAG({ data, onNodeClick, selectedNode }: Orchestrat
       .attr("height", (d) => d.height + 6)
       .attr("rx", NODE_RX + 3)
       .attr("fill", "none")
-      .attr("stroke", "#6366f1")
+      .attr("stroke", "rgb(var(--c-ch-c-indigo))")
       .attr("stroke-width", 2)
       .attr("filter", "url(#glow)")
       .attr("opacity", 0.8);
@@ -1022,7 +1050,7 @@ export function OrchestrationDAG({ data, onNodeClick, selectedNode }: Orchestrat
         return `url(#${KIND_GRADIENTS[d.kind].id})`;
       })
       .attr("stroke", (d) => {
-        if (d.id === selectedNode) return "#6366f1";
+        if (d.id === selectedNode) return "rgb(var(--c-ch-c-indigo))";
         if (d.kind === "outcome" && d.meta?.status) {
           return outcomeColorSet(d.meta.status).stroke;
         }
@@ -1145,7 +1173,10 @@ export function OrchestrationDAG({ data, onNodeClick, selectedNode }: Orchestrat
         <div className="flex items-center gap-1.5 ml-2">
           <span
             className="inline-block h-[2px] w-8 rounded flex-shrink-0"
-            style={{ background: "linear-gradient(to right, #312e81, #4f46e5)" }}
+            style={{
+              background:
+                "linear-gradient(to right, rgb(var(--c-ch-grad-indigo)), rgb(var(--c-ch-grad-indigo-3)))",
+            }}
           />
           <span className="text-[11px] text-gray-500">{t("orchestration.edgeWeight")}</span>
         </div>
@@ -1156,7 +1187,7 @@ export function OrchestrationDAG({ data, onNodeClick, selectedNode }: Orchestrat
         ref={tipRef}
         role="tooltip"
         aria-hidden="true"
-        className="fixed z-50 px-3 py-2 bg-[#12121f] border border-[#2a2a4a] rounded-lg shadow-2xl pointer-events-none"
+        className="fixed z-50 px-3 py-2 bg-ch-canvas border border-ch-border rounded-lg shadow-2xl pointer-events-none"
         style={{
           display: "none",
           opacity: 0,
@@ -1235,10 +1266,11 @@ function buildDAGTooltipContent(el: HTMLDivElement, node: DAGNode, t: TFn) {
     row.style.cssText =
       "display:flex;justify-content:space-between;gap:16px;font-size:11px;line-height:1.6";
     const lbl = document.createElement("span");
-    lbl.style.color = "#64748b";
+    lbl.style.color = "rgb(var(--c-ch-axis))";
     lbl.textContent = label;
     const val = document.createElement("span");
-    val.style.cssText = "color:#cbd5e1;font-weight:500;font-variant-numeric:tabular-nums";
+    val.style.cssText =
+      "color:rgb(var(--c-ch-text-2));font-weight:500;font-variant-numeric:tabular-nums";
     val.textContent = value;
     row.appendChild(lbl);
     row.appendChild(val);
@@ -1248,12 +1280,12 @@ function buildDAGTooltipContent(el: HTMLDivElement, node: DAGNode, t: TFn) {
 
   const desc = document.createElement("p");
   desc.style.cssText =
-    "font-size:11px;color:#94a3b8;line-height:1.45;border-top:1px solid #2a2a4a;padding-top:8px;margin:0";
+    "font-size:11px;color:rgb(var(--c-ch-text-3));line-height:1.45;border-top:1px solid rgb(var(--c-ch-grid));padding-top:8px;margin:0";
   desc.textContent = meta.description;
   el.appendChild(desc);
 
   const hint = document.createElement("p");
-  hint.style.cssText = "font-size:10px;color:#64748b;line-height:1.45;margin:6px 0 0";
+  hint.style.cssText = "font-size:10px;color:rgb(var(--c-ch-axis));line-height:1.45;margin:6px 0 0";
   hint.textContent = t("orchestration.tooltip.tipClickToFilter");
   el.appendChild(hint);
 }
@@ -1334,15 +1366,15 @@ function describeNode(node: DAGNode, t: TFn): { layer: string; description: stri
 function borderColorForKind(kind: DAGNode["kind"]): string {
   switch (kind) {
     case "session":
-      return "#6366f1";
+      return "rgb(var(--c-ch-c-indigo))";
     case "main":
-      return "#3b82f6";
+      return "rgb(var(--c-ch-c-blue))";
     case "subagent":
-      return "#22c55e";
+      return "rgb(var(--c-ch-c-green))";
     case "nested":
-      return "#14b8a6";
+      return "rgb(var(--c-ch-c-teal))";
     case "outcome":
-      return "#6366f1";
+      return "rgb(var(--c-ch-c-indigo))";
   }
 }
 
@@ -1355,15 +1387,15 @@ function borderColorForKind(kind: DAGNode["kind"]): string {
 function textColorForKind(kind: DAGNode["kind"]): string {
   switch (kind) {
     case "session":
-      return "#a5b4fc";
+      return "rgb(var(--c-ch-t-indigo))";
     case "main":
-      return "#93c5fd";
+      return "rgb(var(--c-ch-t-blue-2))";
     case "subagent":
-      return "#86efac";
+      return "rgb(var(--c-ch-t-green))";
     case "nested":
-      return "#5eead4";
+      return "rgb(var(--c-ch-t-teal))";
     case "outcome":
-      return "#c4b5fd";
+      return "rgb(var(--c-ch-t-violet))";
   }
 }
 
@@ -1376,19 +1408,19 @@ function textColorForKind(kind: DAGNode["kind"]): string {
  */
 function badgeBgForKind(kind: DAGNode["kind"], status?: string): string {
   if (kind === "outcome" && status) {
-    return outcomeColorSet(status).stroke + "33";
+    return withAlpha(outcomeColorSet(status).stroke, 0.2);
   }
   switch (kind) {
     case "session":
-      return "rgba(99,102,241,0.25)";
+      return "rgb(var(--c-ch-c-indigo)/0.25)";
     case "main":
-      return "rgba(59,130,246,0.25)";
+      return "rgb(var(--c-ch-c-blue)/0.25)";
     case "subagent":
-      return "rgba(34,197,94,0.25)";
+      return "rgb(var(--c-ch-c-green)/0.25)";
     case "nested":
-      return "rgba(20,184,166,0.25)";
+      return "rgb(var(--c-ch-c-teal)/0.25)";
     case "outcome":
-      return "rgba(99,102,241,0.25)";
+      return "rgb(var(--c-ch-c-indigo)/0.25)";
   }
 }
 
@@ -1408,11 +1440,11 @@ function fmtCount(n: number): string {
 
 /** Legend entries below the graph: one swatch per node kind plus the outcome colors. */
 const LEGEND_ITEMS = [
-  { label: "Sessions", color: "#312e81", border: "#6366f1" },
-  { label: "Main Agent", color: "#1e3a5f", border: "#3b82f6" },
-  { label: "Subagent Types", color: "#052e16", border: "#22c55e" },
-  { label: "Compactions", color: "#134e4a", border: "#14b8a6" },
-  { label: "Completed", color: "#052e16", border: "#16a34a" },
-  { label: "Error", color: "#1f0808", border: "#dc2626" },
-  { label: "Abandoned", color: "#1c1a04", border: "#ca8a04" },
+  { label: "Sessions", color: "rgb(var(--c-ch-grad-indigo))", border: "rgb(var(--c-ch-c-indigo))" },
+  { label: "Main Agent", color: "rgb(var(--c-ch-grad-blue))", border: "rgb(var(--c-ch-c-blue))" },
+  { label: "Subagent Types", color: "rgb(var(--c-ch-ok-bg))", border: "rgb(var(--c-ch-c-green))" },
+  { label: "Compactions", color: "rgb(var(--c-ch-grad-teal))", border: "rgb(var(--c-ch-c-teal))" },
+  { label: "Completed", color: "rgb(var(--c-ch-ok-bg))", border: "rgb(var(--c-ch-ok-stroke))" },
+  { label: "Error", color: "rgb(var(--c-ch-err-bg))", border: "rgb(var(--c-ch-err-stroke))" },
+  { label: "Abandoned", color: "rgb(var(--c-ch-warn-bg))", border: "rgb(var(--c-ch-warn-stroke))" },
 ];

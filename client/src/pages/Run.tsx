@@ -4947,7 +4947,7 @@ function ToolResultBlock({ result }: { result: Extract<ContentBlock, { type: "to
     <div className={`rounded-md border ${tone}`}>
       <button
         onClick={() => setOpen((v) => !v)}
-        className="w-full flex items-center gap-2 px-2.5 py-1.5 text-[11px] font-medium hover:bg-white/5 transition-colors text-left"
+        className="w-full flex items-center gap-2 px-2.5 py-1.5 text-[11px] font-medium hover:bg-tint/5 transition-colors text-left"
       >
         {open ? (
           <ChevronDown className="w-3 h-3 flex-shrink-0" />

@@ -385,7 +385,7 @@ function TreeNode({ node, depth }: TreeNodeProps) {
   return (
     <div>
       <div
-        className="flex items-center gap-2 py-1.5 hover:bg-white/5 rounded transition-colors"
+        className="flex items-center gap-2 py-1.5 hover:bg-tint/5 rounded transition-colors"
         style={{ paddingLeft: `${indentPx + 8}px`, paddingRight: "8px" }}
       >
         {/* Depth connector line */}
@@ -476,7 +476,7 @@ function ToolTimeline({ events }: ToolTimelineProps) {
         {events.map((ev) => (
           <div
             key={ev.id}
-            className="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-white/5 transition-colors"
+            className="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-tint/5 transition-colors"
           >
             {/* Tool pill */}
             <span className="flex-shrink-0 inline-flex items-center px-2 py-0.5 rounded-md text-xs font-medium bg-indigo-500/15 text-indigo-300 border border-indigo-500/20 whitespace-nowrap">
@@ -545,7 +545,7 @@ function EventSequence({ events }: EventSequenceProps) {
         {recent.map((ev) => (
           <div
             key={ev.id}
-            className="flex items-start gap-2 px-2 py-1.5 rounded hover:bg-white/5 transition-colors group"
+            className="flex items-start gap-2 px-2 py-1.5 rounded hover:bg-tint/5 transition-colors group"
           >
             {/* Event type badge */}
             <span
@@ -703,7 +703,7 @@ function SessionHeader({ drillIn, onClose, activeTab, onTabChange }: SessionHead
         <button
           type="button"
           onClick={onClose}
-          className="flex-shrink-0 w-7 h-7 rounded-md flex items-center justify-center text-gray-500 hover:text-gray-200 hover:bg-white/10 transition-colors"
+          className="flex-shrink-0 w-7 h-7 rounded-md flex items-center justify-center text-gray-500 hover:text-gray-200 hover:bg-tint/10 transition-colors"
           aria-label={t("drillIn.closePanel")}
         >
           <X className="w-4 h-4" />
@@ -876,7 +876,7 @@ function SessionSelector({ onSelectSession }: SessionSelectorProps) {
                       key={s.id}
                       type="button"
                       onClick={() => handleSelect(s.id)}
-                      className="flex items-center gap-2 px-3 py-2 text-left hover:bg-white/5 transition-colors border-b border-border/50 last:border-0"
+                      className="flex items-center gap-2 px-3 py-2 text-left hover:bg-tint/5 transition-colors border-b border-border/50 last:border-0"
                     >
                       <span
                         className={`flex-shrink-0 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium border ${sc}`}
@@ -915,7 +915,7 @@ function SessionSelector({ onSelectSession }: SessionSelectorProps) {
                 type="button"
                 onClick={handleLoadMore}
                 disabled={loading}
-                className="w-full px-3 py-2 text-xs text-gray-500 hover:text-gray-300 hover:bg-white/5 transition-colors border-t border-border/50 disabled:opacity-50"
+                className="w-full px-3 py-2 text-xs text-gray-500 hover:text-gray-300 hover:bg-tint/5 transition-colors border-t border-border/50 disabled:opacity-50"
               >
                 {loading ? t("drillIn.loading") : t("drillIn.loadMore")}
               </button>
@@ -1010,7 +1010,7 @@ export function SessionDrillIn({ sessionId, onClose, onSelectSession }: SessionD
           <button
             type="button"
             onClick={onClose}
-            className="w-6 h-6 flex items-center justify-center rounded text-gray-600 hover:text-gray-300 hover:bg-white/10 transition-colors"
+            className="w-6 h-6 flex items-center justify-center rounded text-gray-600 hover:text-gray-300 hover:bg-tint/10 transition-colors"
             aria-label={t("drillIn.close")}
           >
             <X className="w-3.5 h-3.5" />

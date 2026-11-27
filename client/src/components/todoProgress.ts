@@ -193,35 +193,35 @@ export const TODO_STATUS_META: Record<
   }
 > = {
   completed: {
-    color: "#34d399",
+    color: "rgb(var(--c-ch-t-emerald-2))",
     textClass: "text-emerald-300",
     bgClass: "bg-emerald-500/10",
     borderClass: "border-emerald-500/20",
     labelKey: "taskProgress.status.completed",
   },
   in_progress: {
-    color: "#60a5fa",
+    color: "rgb(var(--c-ch-t-blue-3))",
     textClass: "text-blue-300",
     bgClass: "bg-blue-500/10",
     borderClass: "border-blue-500/20",
     labelKey: "taskProgress.status.inProgress",
   },
   pending: {
-    color: "#a78bfa",
+    color: "rgb(var(--c-ch-t-violet-2))",
     textClass: "text-violet-300",
     bgClass: "bg-violet-500/10",
     borderClass: "border-violet-500/20",
     labelKey: "taskProgress.status.pending",
   },
   cancelled: {
-    color: "#6b7280",
+    color: "rgb(var(--c-ch-muted))",
     textClass: "text-gray-400",
     bgClass: "bg-gray-500/10",
     borderClass: "border-gray-500/20",
     labelKey: "taskProgress.status.cancelled",
   },
   unknown: {
-    color: "#f59e0b",
+    color: "rgb(var(--c-ch-t-amber-2))",
     textClass: "text-amber-300",
     bgClass: "bg-amber-500/10",
     borderClass: "border-amber-500/20",

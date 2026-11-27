@@ -254,16 +254,16 @@ const LINK_OPACITY_HOVER = 0.45;
  * Other tools use {@link COLOR_DEFAULT}.
  */
 const TOOL_COLORS: Record<string, string> = {
-  Read: "#3b82f6",
-  Write: "#22c55e",
-  Edit: "#eab308",
-  Bash: "#ef4444",
-  Grep: "#a855f7",
-  Glob: "#ec4899",
-  Agent: "#6366f1",
+  Read: "rgb(var(--c-ch-c-blue))",
+  Write: "rgb(var(--c-ch-c-green))",
+  Edit: "rgb(var(--c-ch-c-yellow))",
+  Bash: "rgb(var(--c-ch-c-red))",
+  Grep: "rgb(var(--c-ch-c-purple))",
+  Glob: "rgb(var(--c-ch-c-pink))",
+  Agent: "rgb(var(--c-ch-c-indigo))",
 };
 /** Color for tools without a fixed color (MCP tools, custom tools). */
-const COLOR_DEFAULT = "#64748b";
+const COLOR_DEFAULT = "rgb(var(--c-ch-axis))";
 
 /**
  * Color for a Sankey node, ignoring the internal `_source` / `_target` suffix.
@@ -719,14 +719,18 @@ export function ToolExecutionFlow({
         .attr("text-anchor", anchor)
         .style("font-size", "12px")
         .style("font-family", "Inter, -apple-system, sans-serif")
-        .style("fill", "#e2e8f0")
+        .style("fill", "rgb(var(--c-ch-text))")
         .style("pointer-events", "none")
         .style("user-select", "none");
 
       text.append("tspan").text(label).style("font-weight", "500");
 
       if (pct) {
-        text.append("tspan").text(pct).style("fill", "#64748b").style("font-size", "11px");
+        text
+          .append("tspan")
+          .text(pct)
+          .style("fill", "rgb(var(--c-ch-axis))")
+          .style("font-size", "11px");
       }
     });
 
@@ -772,9 +776,9 @@ export function ToolExecutionFlow({
           opacity: 0,
           left: 0,
           top: 0,
-          background: "#12121f",
-          border: "1px solid #2a2a4a",
-          color: "#e2e8f0",
+          background: "rgb(var(--c-ch-canvas))",
+          border: "1px solid rgb(var(--c-ch-grid))",
+          color: "rgb(var(--c-ch-text))",
           minWidth: 240,
           maxWidth: 320,
           transition: "opacity 120ms ease-out",
@@ -810,10 +814,11 @@ function appendTipRow(parent: HTMLElement, label: string, value: string) {
   row.style.cssText =
     "display:flex;justify-content:space-between;gap:16px;font-size:11px;line-height:1.6";
   const lbl = document.createElement("span");
-  lbl.style.color = "#64748b";
+  lbl.style.color = "rgb(var(--c-ch-axis))";
   lbl.textContent = label;
   const val = document.createElement("span");
-  val.style.cssText = "color:#cbd5e1;font-weight:500;font-variant-numeric:tabular-nums";
+  val.style.cssText =
+    "color:rgb(var(--c-ch-text-2));font-weight:500;font-variant-numeric:tabular-nums";
   val.textContent = value;
   row.appendChild(lbl);
   row.appendChild(val);
@@ -845,13 +850,13 @@ function buildToolFlowTooltip(
     const name = localizeToolLabel(payload.rawName);
 
     const title = document.createElement("p");
-    title.style.cssText = "font-size:12px;font-weight:600;color:#e2e8f0;margin:0";
+    title.style.cssText = "font-size:12px;font-weight:600;color:rgb(var(--c-ch-text));margin:0";
     title.textContent = name;
     el.appendChild(title);
 
     const subtitle = document.createElement("p");
     subtitle.style.cssText =
-      "font-size:10px;color:#64748b;margin:2px 0 8px;text-transform:uppercase;letter-spacing:0.05em";
+      "font-size:10px;color:rgb(var(--c-ch-axis));margin:2px 0 8px;text-transform:uppercase;letter-spacing:0.05em";
     subtitle.textContent = t("toolFlow.tooltip.node");
     el.appendChild(subtitle);
 
@@ -860,7 +865,7 @@ function buildToolFlowTooltip(
 
     const desc = document.createElement("p");
     desc.style.cssText =
-      "font-size:11px;color:#94a3b8;line-height:1.45;border-top:1px solid #2a2a4a;padding-top:8px;margin:8px 0 0";
+      "font-size:11px;color:rgb(var(--c-ch-text-3));line-height:1.45;border-top:1px solid rgb(var(--c-ch-grid));padding-top:8px;margin:8px 0 0";
     desc.textContent = t("toolFlow.tooltip.nodeDescFmt", { name });
     el.appendChild(desc);
     return;
@@ -871,9 +876,9 @@ function buildToolFlowTooltip(
   const tgt = localizeToolLabel(payload.target);
 
   const title = document.createElement("p");
-  title.style.cssText = "font-size:12px;font-weight:600;color:#e2e8f0;margin:0";
+  title.style.cssText = "font-size:12px;font-weight:600;color:rgb(var(--c-ch-text));margin:0";
   const tspanArrow = document.createElement("span");
-  tspanArrow.style.color = "#64748b";
+  tspanArrow.style.color = "rgb(var(--c-ch-axis))";
   tspanArrow.textContent = " → ";
   title.appendChild(document.createTextNode(src));
   title.appendChild(tspanArrow);
@@ -882,7 +887,7 @@ function buildToolFlowTooltip(
 
   const subtitle = document.createElement("p");
   subtitle.style.cssText =
-    "font-size:10px;color:#64748b;margin:2px 0 8px;text-transform:uppercase;letter-spacing:0.05em";
+    "font-size:10px;color:rgb(var(--c-ch-axis));margin:2px 0 8px;text-transform:uppercase;letter-spacing:0.05em";
   subtitle.textContent = t("toolFlow.tooltip.link");
   el.appendChild(subtitle);
 
@@ -900,7 +905,7 @@ function buildToolFlowTooltip(
 
   const desc = document.createElement("p");
   desc.style.cssText =
-    "font-size:11px;color:#94a3b8;line-height:1.45;border-top:1px solid #2a2a4a;padding-top:8px;margin:8px 0 0";
+    "font-size:11px;color:rgb(var(--c-ch-text-3));line-height:1.45;border-top:1px solid rgb(var(--c-ch-grid));padding-top:8px;margin:8px 0 0";
   desc.textContent = t("toolFlow.tooltip.linkDescFmt", { source: src, target: tgt });
   el.appendChild(desc);
 }
@@ -909,14 +914,14 @@ function buildToolFlowTooltip(
 
 /** Legend entries: the built-in tools with fixed colors. */
 const LEGEND_ITEMS: Array<{ key: string; color: string }> = [
-  { key: "read", color: "#3b82f6" },
-  { key: "write", color: "#22c55e" },
-  { key: "edit", color: "#eab308" },
-  { key: "bash", color: "#ef4444" },
-  { key: "grep", color: "#a855f7" },
-  { key: "glob", color: "#ec4899" },
-  { key: "agent", color: "#6366f1" },
-  { key: "other", color: "#64748b" },
+  { key: "read", color: "rgb(var(--c-ch-c-blue))" },
+  { key: "write", color: "rgb(var(--c-ch-c-green))" },
+  { key: "edit", color: "rgb(var(--c-ch-c-yellow))" },
+  { key: "bash", color: "rgb(var(--c-ch-c-red))" },
+  { key: "grep", color: "rgb(var(--c-ch-c-purple))" },
+  { key: "glob", color: "rgb(var(--c-ch-c-pink))" },
+  { key: "agent", color: "rgb(var(--c-ch-c-indigo))" },
+  { key: "other", color: "rgb(var(--c-ch-axis))" },
 ];
 
 /** Color legend shown under the Sankey diagram. */

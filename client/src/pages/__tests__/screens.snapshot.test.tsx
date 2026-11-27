@@ -74,6 +74,8 @@
  *   focused test selection.
  * - `LocationProbe` (function) — top-level declaration that helps orient code review and focused
  *   test selection.
+ * - `nativeToLocaleTimeString` (variable) — top-level declaration that helps orient code review and
+ *   focused test selection.
  * - `nodeProcess` (variable) — top-level declaration that helps orient code review and focused test
  *   selection.
  * - `ObserverStub` (class) — top-level declaration that helps orient code review and focused test

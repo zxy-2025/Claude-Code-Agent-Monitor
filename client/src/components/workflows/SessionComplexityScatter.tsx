@@ -231,10 +231,10 @@ const MAX_BUBBLE_R = 32;
 
 /** Bubble color for each session status. */
 const STATUS_COLOR: Record<string, string> = {
-  completed: "#22c55e",
-  error: "#ef4444",
-  active: "#6366f1",
-  abandoned: "#eab308",
+  completed: "rgb(var(--c-ch-c-green))",
+  error: "rgb(var(--c-ch-c-red))",
+  active: "rgb(var(--c-ch-c-indigo))",
+  abandoned: "rgb(var(--c-ch-c-yellow))",
 };
 
 /**
@@ -244,7 +244,7 @@ const STATUS_COLOR: Record<string, string> = {
  * @returns A hex color.
  */
 function statusColor(status: string): string {
-  return STATUS_COLOR[status] ?? "#6b7280";
+  return STATUS_COLOR[status] ?? "rgb(var(--c-ch-muted))";
 }
 
 // ── Duration formatting ───────────────────────────────────────────────────────
@@ -313,7 +313,7 @@ function Tooltip({ state }: { state: TooltipState }) {
 
   return (
     <div
-      className="fixed z-50 px-3 py-2 text-xs bg-[#12121f] border border-[#2a2a4a] rounded-lg shadow-xl text-gray-200 pointer-events-none whitespace-nowrap"
+      className="fixed z-50 px-3 py-2 text-xs bg-ch-canvas border border-ch-border rounded-lg shadow-xl text-gray-200 pointer-events-none whitespace-nowrap"
       style={{
         left: nearRight ? state.x - 12 : state.x + 12,
         top: state.y - 10,
@@ -342,7 +342,7 @@ function Tooltip({ state }: { state: TooltipState }) {
           </span>
         )}
       </div>
-      <div className="mt-1 pt-1 border-t border-[#2a2a4a]">
+      <div className="mt-1 pt-1 border-t border-ch-border">
         <span className="font-medium" style={{ color: statusColor(state.item.status) }}>
           {t(`common:status.${state.item.status}`, { defaultValue: state.item.status })}
         </span>
@@ -471,7 +471,7 @@ export function SessionComplexityScatter({ data, onSessionClick }: SessionComple
       .range([MIN_BUBBLE_R, MAX_BUBBLE_R]);
 
     // Grid lines
-    const gridColor = "#2a2a3d";
+    const gridColor = "rgb(var(--c-ch-line))";
 
     g.append("g")
       .attr("class", "grid-x")
@@ -512,9 +512,9 @@ export function SessionComplexityScatter({ data, onSessionClick }: SessionComple
           .tickFormat((d) => fmtXTick(d as number))
       )
       .call((sel) => {
-        sel.select(".domain").attr("stroke", "#363650");
-        sel.selectAll(".tick line").attr("stroke", "#363650");
-        sel.selectAll(".tick text").attr("fill", "#6b7280").attr("font-size", "11");
+        sel.select(".domain").attr("stroke", "rgb(var(--c-ch-border))");
+        sel.selectAll(".tick line").attr("stroke", "rgb(var(--c-ch-border))");
+        sel.selectAll(".tick text").attr("fill", "rgb(var(--c-ch-muted))").attr("font-size", "11");
       });
 
     // X axis label
@@ -522,7 +522,7 @@ export function SessionComplexityScatter({ data, onSessionClick }: SessionComple
       .attr("x", innerW / 2)
       .attr("y", innerH + 44)
       .attr("text-anchor", "middle")
-      .attr("fill", "#6b7280")
+      .attr("fill", "rgb(var(--c-ch-muted))")
       .attr("font-size", "11")
       .text(t("complexity.duration"));
 
@@ -530,9 +530,9 @@ export function SessionComplexityScatter({ data, onSessionClick }: SessionComple
     g.append("g")
       .call(d3.axisLeft(yScale).ticks(5).tickFormat(d3.format("d")))
       .call((sel) => {
-        sel.select(".domain").attr("stroke", "#363650");
-        sel.selectAll(".tick line").attr("stroke", "#363650");
-        sel.selectAll(".tick text").attr("fill", "#6b7280").attr("font-size", "11");
+        sel.select(".domain").attr("stroke", "rgb(var(--c-ch-border))");
+        sel.selectAll(".tick line").attr("stroke", "rgb(var(--c-ch-border))");
+        sel.selectAll(".tick text").attr("fill", "rgb(var(--c-ch-muted))").attr("font-size", "11");
       });
 
     // Y axis label
@@ -541,7 +541,7 @@ export function SessionComplexityScatter({ data, onSessionClick }: SessionComple
       .attr("x", -innerH / 2)
       .attr("y", -40)
       .attr("text-anchor", "middle")
-      .attr("fill", "#6b7280")
+      .attr("fill", "rgb(var(--c-ch-muted))")
       .attr("font-size", "11")
       .text(t("complexity.agentCount"));
 

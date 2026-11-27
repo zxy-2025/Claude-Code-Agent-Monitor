@@ -769,7 +769,7 @@ function PricingInfoTooltip({ provider = "claude" }: { provider?: "claude" | "cu
         <div
           ref={popoverRef}
           role="tooltip"
-          className="fixed z-50 p-3 bg-[#12121f] border border-[#2a2a4a] rounded-lg shadow-2xl text-[11px] text-gray-300 pointer-events-none"
+          className="fixed z-50 p-3 bg-ch-canvas border border-ch-border rounded-lg shadow-2xl text-[11px] text-gray-300 pointer-events-none"
           style={{ left: pos.left, top: pos.top, width: 320 }}
         >
           <p className="text-xs font-semibold text-gray-100 mb-2">{t(`${key}.title`)}</p>
@@ -2632,7 +2632,7 @@ export function Settings() {
                   onClick={() => setDataScope({ ...dataScope, provider })}
                   className={`rounded-lg border p-3 text-left transition-colors ${
                     selected
-                      ? "border-accent bg-accent/10 shadow-[0_0_0_1px_rgba(129,140,248,0.14)]"
+                      ? "border-accent bg-accent/10 shadow-[0_0_0_1px_rgb(var(--c-ch-c-indigo-2)/0.14)]"
                       : "border-border bg-surface-2 hover:border-gray-600"
                   }`}
                 >

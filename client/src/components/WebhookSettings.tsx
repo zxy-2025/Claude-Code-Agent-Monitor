@@ -250,16 +250,16 @@ import type {
  * NEUTRAL_STYLE}.
  */
 const TYPE_STYLES: Partial<Record<WebhookType, string>> = {
-  slack: "text-[#E01E5A] bg-[#E01E5A]/10 border-[#E01E5A]/20",
-  discord: "text-[#5865F2] bg-[#5865F2]/10 border-[#5865F2]/20",
-  teams: "text-[#6264A7] bg-[#6264A7]/10 border-[#6264A7]/20",
-  google_chat: "text-[#1A73E8] bg-[#1A73E8]/10 border-[#1A73E8]/20",
-  mattermost: "text-[#0058CC] bg-[#0058CC]/10 border-[#0058CC]/20",
-  rocketchat: "text-[#F5455C] bg-[#F5455C]/10 border-[#F5455C]/20",
-  telegram: "text-[#26A5E4] bg-[#26A5E4]/10 border-[#26A5E4]/20",
-  pagerduty: "text-[#06AC38] bg-[#06AC38]/10 border-[#06AC38]/20",
-  opsgenie: "text-[#2684FF] bg-[#2684FF]/10 border-[#2684FF]/20",
-  splunk_oncall: "text-[#F99D1C] bg-[#F99D1C]/10 border-[#F99D1C]/20",
+  slack: "text-brand-slack bg-brand-slack/10 border-brand-slack/20",
+  discord: "text-brand-discord bg-brand-discord/10 border-brand-discord/20",
+  teams: "text-brand-teams bg-brand-teams/10 border-brand-teams/20",
+  google_chat: "text-brand-google-chat bg-brand-google-chat/10 border-brand-google-chat/20",
+  mattermost: "text-brand-mattermost bg-brand-mattermost/10 border-brand-mattermost/20",
+  rocketchat: "text-brand-rocketchat bg-brand-rocketchat/10 border-brand-rocketchat/20",
+  telegram: "text-brand-telegram bg-brand-telegram/10 border-brand-telegram/20",
+  pagerduty: "text-brand-pagerduty bg-brand-pagerduty/10 border-brand-pagerduty/20",
+  opsgenie: "text-brand-opsgenie bg-brand-opsgenie/10 border-brand-opsgenie/20",
+  splunk_oncall: "text-brand-splunk-oncall bg-brand-splunk-oncall/10 border-brand-splunk-oncall/20",
 };
 /** Badge classes for providers without a brand accent. */
 const NEUTRAL_STYLE = "text-gray-300 bg-surface-2 border-border";

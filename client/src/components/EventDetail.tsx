@@ -462,7 +462,7 @@ function SummaryBlock({
     refs.length > 0 ? t("eventDetail.seeDetailsBelow", { fields: refs.join(" · ") }) : null;
   return (
     <div className="border border-border rounded overflow-hidden bg-surface-3/30">
-      <div className="px-3 py-1 border-b border-border bg-black/20">
+      <div className="px-3 py-1 border-b border-border bg-code-row">
         <span className="text-gray-500 text-[10px] uppercase tracking-wide font-semibold">
           {t("eventDetail.summary")}
         </span>
@@ -597,8 +597,8 @@ function CodeView({ value }: { value: unknown }) {
   const text = typeof value === "string" ? value : safeStringify(value);
 
   return (
-    <div className="relative bg-black/70 border border-border rounded font-mono text-[11px] overflow-hidden">
-      <div className="flex items-center justify-between px-3 py-1.5 border-b border-border bg-black/40">
+    <div className="relative bg-code-panel border border-border rounded font-mono text-[11px] overflow-hidden">
+      <div className="flex items-center justify-between px-3 py-1.5 border-b border-border bg-code-header">
         <span className="text-gray-500 text-[10px] uppercase tracking-wide">
           {typeof value === "string" ? "text" : Array.isArray(value) ? "array" : "json"}
         </span>
